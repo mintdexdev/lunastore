@@ -1,0 +1,280 @@
+ /* inter-300 - latin_latin-ext */
+ @font-face {
+   font-display: swap;
+   font-family: 'Inter', sans-serif;
+   font-style: normal;
+   font-weight: 300;
+   src:
+     local('Inter'),
+     url('./assets/fonts/inter-v20-latin_latin-ext-300.woff2') format('woff2'),
+     url('./assets/fonts/inter-v20-latin_latin-ext-300.ttf') format('truetype');
+ }
+
+ /* inter-300italic - latin_latin-ext */
+ @font-face {
+   font-display: swap;
+   font-family: 'Inter', sans-serif;
+   font-style: italic;
+   font-weight: 300;
+   src: local('Inter'),
+     url('./assets/fonts/inter-v20-latin_latin-ext-300italic.woff2') format('woff2'),
+     url('./assets/fonts/inter-v20-latin_latin-ext-300italic.ttf') format('truetype');
+ }
+
+ /* inter-500 - latin_latin-ext */
+ @font-face {
+   font-display: swap;
+   font-family: 'Inter', sans-serif;
+   font-style: normal;
+   font-weight: 500;
+   src: local('Inter'),
+     url('./assets/fonts/inter-v20-latin_latin-ext-500.woff2') format('woff2'),
+     url('./assets/fonts/inter-v20-latin_latin-ext-500.ttf') format('truetype');
+ }
+
+ /* inter-500italic - latin_latin-ext */
+ @font-face {
+   font-display: swap;
+   font-family: 'Inter', sans-serif;
+   font-style: italic;
+   font-weight: 500;
+   src: local('Inter'),
+     url('./assets/fonts/inter-v20-latin_latin-ext-500italic.woff2') format('woff2'),
+     url('./assets/fonts/inter-v20-latin_latin-ext-500italic.ttf') format('truetype');
+ }
+
+ /* inter-700 - latin_latin-ext */
+ @font-face {
+   font-display: swap;
+   font-family: 'Inter', sans-serif;
+   font-style: normal;
+   font-weight: 700;
+   src: local('Inter'),
+     url('./assets/fonts/inter-v20-latin_latin-ext-700.woff2') format('woff2'),
+     url('./assets/fonts/inter-v20-latin_latin-ext-700.ttf') format('truetype');
+ }
+
+ /* inter-700italic - latin_latin-ext */
+ @font-face {
+   font-display: swap;
+   font-family: 'Inter', sans-serif;
+   font-style: italic;
+   font-weight: 700;
+   src: local('Inter'),
+     url('./assets/fonts/inter-v20-latin_latin-ext-700italic.woff2') format('woff2'),
+     url('./assets/fonts/inter-v20-latin_latin-ext-700italic.ttf') format('truetype');
+ }
+
+ /* jetbrains-mono-300 - latin */
+ @font-face {
+   font-display: swap;
+   font-family: 'JetBrains Mono', monospace;
+   font-style: normal;
+   font-weight: 300;
+   src:
+     local('JetBrains Mono'),
+     url('./assets/fonts/jetbrains-mono-v24-latin-300.woff2') format('woff2'),
+     url('./assets/fonts/jetbrains-mono-v24-latin-300.ttf') format('truetype');
+ }
+
+ /* jetbrains-mono-300italic - latin */
+ @font-face {
+   font-display: swap;
+   font-family: 'JetBrains Mono', monospace;
+   font-style: italic;
+   font-weight: 300;
+   src: local('JetBrains Mono'),
+     url('./assets/fonts/jetbrains-mono-v24-latin-300italic.woff2') format('woff2'),
+     url('./assets/fonts/jetbrains-mono-v24-latin-300italic.ttf') format('truetype');
+ }
+
+ /* jetbrains-mono-500 - latin */
+ @font-face {
+   font-display: swap;
+   font-family: 'JetBrains Mono', monospace;
+   font-style: normal;
+   font-weight: 500;
+   src: local('JetBrains Mono'),
+     url('./assets/fonts/jetbrains-mono-v24-latin-500.woff2') format('woff2'),
+     url('./assets/fonts/jetbrains-mono-v24-latin-500.ttf') format('truetype');
+ }
+
+ /* jetbrains-mono-500italic - latin */
+ @font-face {
+   font-display: swap;
+   font-family: 'JetBrains Mono', monospace;
+   font-style: italic;
+   font-weight: 500;
+   src: local('JetBrains Mono'),
+     url('./assets/fonts/jetbrains-mono-v24-latin-500italic.woff2') format('woff2'),
+     url('./assets/fonts/jetbrains-mono-v24-latin-500italic.ttf') format('truetype');
+ }
+
+ /* jetbrains-mono-700 - latin */
+ @font-face {
+   font-display: swap;
+   font-family: 'JetBrains Mono', monospace;
+   font-style: normal;
+   font-weight: 700;
+   src: local('JetBrains Mono'),
+     url('./assets/fonts/jetbrains-mono-v24-latin-700.woff2') format('woff2'),
+     url('./assets/fonts/jetbrains-mono-v24-latin-700.ttf') format('truetype');
+ }
+
+ /* jetbrains-mono-700italic - latin */
+ @font-face {
+   font-display: swap;
+   font-family: 'JetBrains Mono', monospace;
+   font-style: italic;
+   font-weight: 700;
+   src: local('JetBrains Mono'),
+     url('./assets/fonts/jetbrains-mono-v24-latin-700italic.woff2') format('woff2'),
+     url('./assets/fonts/jetbrains-mono-v24-latin-700italic.ttf') format('truetype');
+ }
+
+ :root {
+   --font-sans: 'Inter', Arial, Helvetica, sans-serif;
+   --font-mono: 'JetBrains Mono', monospace;
+
+   --color-1: #ffffff;
+   --color-1a: #eeeeee;
+
+   --color-2: #000000;
+   --color-2a: #111111;
+
+   --color-3: #0071e3;
+   --color-3a: #012061;
+
+   --color-4: #b3261e;
+   --color-4a: #f9dedc;
+   --color-4b: #8c1d18;
+
+   --color-5: #1EB361;
+
+   --color-helper1: #262626;
+   --color-helper2: #616161;
+   --color-helper3: #808080;
+   --color-helper4: #939393;
+   --color-helper4: #d9d9d9;
+
+   --gap-16-80: clamp(1rem, -0.3043rem + 5.7971vw, 5rem)
+ }
+
+ @import 'tailwindcss';
+
+ @theme {
+   --font-sans: var(--font-sans);
+   --font-mono: var(--font-mono);
+
+   --color-c-1: #ffffff;
+   --color-c-1a: #eeeeee;
+
+   --color-c-2: #000000;
+   --color-c-2a: #111111;
+
+   --color-c-3: #0071e3;
+   --color-c-3a: #012061;
+
+   --color-c-4: #b3261e;
+   --color-c-4a: #f9dedc;
+   --color-c-4b: #8c1d18;
+
+   --color-5: #1EB361;
+
+   --color-helper1: #262626;
+   --color-helper2: #616161;
+   --color-helper3: #808080;
+   --color-helper4: #939393;
+   --color-helper4: #d9d9d9;
+
+   --gap-16-80: var(--gap-16-80);
+ }
+
+
+ .text-l9 {
+   font-size: calc((160/16) * 1rem);
+   line-height: 1.2;
+ }
+
+ .text-l8 {
+   font-size: calc((128/16) * 1rem);
+   line-height: 1.2;
+ }
+
+ .text-l7 {
+   font-size: calc((96/16) * 1rem);
+   line-height: 1.2;
+ }
+
+ .text-l6 {
+   font-size: calc((80/16) * 1rem);
+   line-height: 1.3;
+ }
+
+ .text-l5 {
+   font-size: calc((64/16) * 1rem);
+   line-height: 1.3;
+ }
+
+ .text-l4 {
+   font-size: calc((48/16) * 1rem);
+   line-height: 1.3;
+ }
+
+ .text-l3 {
+   font-size: calc((40/16) * 1rem);
+   line-height: 1.4;
+ }
+
+ .text-l2 {
+   font-size: calc((32/16) * 1rem);
+   line-height: 1.4;
+ }
+
+ .text-l1 {
+   font-size: calc((24/16) * 1rem);
+   line-height: 1.4;
+ }
+
+ .text-lg {
+   font-size: calc((20/16) * 1rem);
+   line-height: 1.5;
+ }
+
+ .text-md {
+   font-size: calc((16/16) * 1rem);
+   line-height: 1.5;
+ }
+
+ .text-sm {
+   font-size: calc((14/16) * 1rem);
+   line-height: 1.5;
+ }
+
+ .text-s1 {
+   font-size: calc((12/16) * 1rem);
+   line-height: 1.6;
+ }
+
+ .text-s2 {
+   font-size: calc((10/16) * 1rem);
+   line-height: 1.6;
+ }
+
+
+ body {
+   font-family: var(--font-sans);
+   font-weight: 500;
+
+   background: var(--color-1);
+   color: var(--color-2);
+ }
+
+ button,
+ a {
+   @apply cursor-pointer
+ }
+
+ .container-1920-p-80 {
+   @apply gap-16-80 max-w-[1920px] mx-auto
+ }

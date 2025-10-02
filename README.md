@@ -1,26 +1,18 @@
-# lunarstore
+# React + Vite
 
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-```bash
-# clone the repo
-git clone https://github.com/mintdexdev/lunarstore.git
-# change directory
-cd lunarstore
+Currently, two official plugins are available:
 
-# install dependencies
-npm i
-# run development server
-npm run dev
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-# create build files
-npm run build
-# run production server
-npm run start
-```
- 
-## Learn More
+## React Compiler
 
-To learn more about Next.js, take a look at the following resources:
+The React Compiler is enabled on this template. See [this documentation](https://react.dev/learn/react-compiler) for more information.
 
-- [Next.js Documentation](https://nextjs.org/docs) 
-- [Learn Next.js](https://nextjs.org/learn) 
+Note: This will impact Vite dev & build performances.
+
+## Expanding the ESLint configuration
+
+If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
