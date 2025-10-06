@@ -3,4 +3,6 @@ import Navbar from './Navbar';
 import Footer from './Footer';
 import Banner from './Banner';
 
-export { TextField, Navbar, Footer, Banner };
+import Container from './Container';
+
+export { TextField, Navbar, Footer, Banner, Container };
