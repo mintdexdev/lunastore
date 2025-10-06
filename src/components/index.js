@@ -5,4 +5,18 @@ import Banner from './Banner';
 
 import Container from './Container';
 
-export { TextField, Navbar, Footer, Banner, Container };
+import ProductCard from './ProductCard';
+import ProductGroup from './ProductGroup';
+
+import CategoryGroup from './CategoryGroup';
+
+export {
+  TextField,
+  Navbar,
+  Footer,
+  Banner,
+  Container,
+  ProductCard,
+  ProductGroup,
+  CategoryGroup
+};

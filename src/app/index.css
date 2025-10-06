@@ -154,8 +154,8 @@
    --color-helper1: #262626;
    --color-helper2: #616161;
    --color-helper3: #808080;
-   --color-helper4: #939393;
-   --color-helper4: #d9d9d9;
+   --color-helper4: #9e9e9e;
+   --color-helper5: #d9d9d9;
  }
 
  @import 'tailwindcss';
@@ -177,13 +177,13 @@
    --color-c-4a: #f9dedc;
    --color-c-4b: #8c1d18;
 
-   --color-5: #1EB361;
+   --color-c-5: #1EB361;
 
    --color-helper1: #262626;
    --color-helper2: #616161;
    --color-helper3: #808080;
    --color-helper4: #939393;
-   --color-helper4: #d9d9d9;
+   --color-helper5: #d9d9d9;
 
    --spacing-16-80: clamp(1rem, 0.0769rem + 4.1026vw, 5rem);
 
@@ -271,4 +271,8 @@
  button,
  a {
    @apply cursor-pointer
+ }
+
+ .gap-inside-section {
+   @apply flex flex-col gap-16;
  }
