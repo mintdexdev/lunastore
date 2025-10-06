@@ -1,14 +1,15 @@
-import TextField from './TextField';
-import Navbar from './Navbar';
-import Footer from './Footer';
-import Banner from './Banner';
+import TextField from './TextField.jsx';
+import Navbar from './Navbar.jsx';
+import Footer from './Footer.jsx';
+import Banner from './Banner.jsx';
 
-import Container from './Container';
+import Container from './Container.jsx';
 
-import ProductCard from './ProductCard';
-import ProductGroup from './ProductGroup';
+import ProductCard from './ProductCard.jsx';
+import ProductGroup from './ProductGroup.jsx';
 
-import CategoryGroup from './CategoryGroup';
+import CategoryGroup from './CategoryGroup.jsx';
+import AllProducts from './AllProducts.jsx';
 
 export {
   TextField,
@@ -18,5 +19,6 @@ export {
   Container,
   ProductCard,
   ProductGroup,
-  CategoryGroup
+  CategoryGroup,
+  AllProducts
 };
