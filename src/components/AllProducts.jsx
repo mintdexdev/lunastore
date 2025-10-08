@@ -1,6 +1,8 @@
 import { ProductCard } from ".";
 
-export default function AllProducts() {
+export default function AllProducts({
+  cardVarient = "default"
+}) {
   return (
     <div>
       <div className='flex justify-between items-center'>
@@ -17,15 +19,14 @@ export default function AllProducts() {
 
       <div className='mt-8 grid grid-cols-4 gap-x-6 gap-y-8'>
 
-        <ProductCard />
-        <ProductCard />
-        <ProductCard />
-        <ProductCard />
-
-        <ProductCard />
-        <ProductCard />
-        <ProductCard />
-        <ProductCard />
+        <ProductCard varient={cardVarient}/>
+        <ProductCard varient={cardVarient}/>
+        <ProductCard varient={cardVarient}/>
+        <ProductCard varient={cardVarient}/>
+        <ProductCard varient={cardVarient}/>
+        <ProductCard varient={cardVarient}/>
+        <ProductCard varient={cardVarient}/>
+        <ProductCard varient={cardVarient}/>
 
       </div>
     </div>

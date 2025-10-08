@@ -1,7 +1,20 @@
+import { AllProducts, Banner, Container } from '@/components'
 import React from 'react'
 
 export default function Wishlist() {
   return (
-    <div>Wishlist</div>
+    <div className='flex flex-col gap-20'>
+      <Banner
+        heading='wishlist'
+        title='Buy all you want'
+        tagline='Everything you need, Everything you want' />
+      <section>
+        <Container>
+
+          <AllProducts cardVarient="wishlist" />
+
+        </Container>
+      </section>
+    </div>
   )
 }

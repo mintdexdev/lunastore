@@ -38,7 +38,8 @@ export default function Category() {
         <Container className='gap-inside-section' >
 
           <ProductGroup
-            type='short'
+            varient="latest"
+            cardVarient='embedded'
             title="Latest Release. Take a look at what's new right now."
           />
           <ProductGroup
