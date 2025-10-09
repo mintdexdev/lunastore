@@ -47,6 +47,7 @@ const router = createBrowserRouter([
     path: "/auth",
     Component: Auth,
   },
+
 ]);
 
 createRoot(document.getElementById('root')).render(
