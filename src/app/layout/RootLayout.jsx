@@ -8,7 +8,7 @@ export default function RootLayout() {
         <Navbar />
       </header>
 
-      <main>
+      <main className='flex flex-col gap-20'>
         <Outlet />
       </main>
 
