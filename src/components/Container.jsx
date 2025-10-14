@@ -1,4 +1,5 @@
 import React from 'react'
+import { twMerge } from 'tailwind-merge';
 
 export default function Container({
   children,
@@ -21,7 +22,7 @@ export default function Container({
   }
 
   return (
-    <div className={` ${variantClass} px-16-80 mx-auto ${className}`} {...props}>
+    <div className={twMerge(`${variantClass} px-16-80 mx-auto`, className)} {...props}>
       {children}
     </div>
   );
