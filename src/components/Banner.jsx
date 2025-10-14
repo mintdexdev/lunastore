@@ -7,9 +7,24 @@ export default function Banner(
     heading = "",
     title = "Title",
     tagline = "",
+    varient = "default",
     className = ""
   }
 ) {
+  if (varient === "noImage") {
+    return (
+      <div className={`max-w-[1920px] mx-auto aspect-[4/1] grid place-items-center ${className}`}>
+
+        <div className='text-center'>
+          <p className='text-sm uppercase'>{heading}</p>
+          <h1 className='text-l7'>{title}</h1>
+          <p className='text-l2'>{tagline}</p>
+        </div>
+
+      </div>
+    )
+  }
+
   return (
     <div className={`relative aspect-[3/1] text-c-1 grid place-items-center ${className}`}>
 

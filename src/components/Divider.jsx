@@ -1,8 +1,12 @@
-export default function Divider({ horizontal = false }) {
+export default function Divider(
+  { horizontal = false,
+    thickness = "1px"
+  }
+) {
 
   if (horizontal) {
     return (
-      <div className='w-[1px] h-full bg-helper4' />
+      <div className={`w-[${thickness}] bg-helper4`} />
     )
   }
   return (

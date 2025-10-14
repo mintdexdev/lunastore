@@ -1,19 +1,6 @@
 import React from 'react'
-
-export const CARD_CONSTANTS = {
-  VARIANT: {
-    DEFAULT: "default",
-    EMBEDDED: "embedded",
-    CATEGORY: "category",
-    WISHLIST: "wishlist",
-    CART: "cart"
-  },
-
-  LAYOUT: {
-    GRID: "grid",
-    LIST: "list"
-  },
-};
+import { CARD_CONSTANTS } from '@/app/constants/ProductCard.constants'
+import { Divider } from '.'
 
 
 export default function ProductCard(
@@ -67,6 +54,83 @@ export default function ProductCard(
           <p className='text-helper4'>{description}</p>
           <div className='flex gap-4 items-center'>
             <p className='text-l1'>{price}</p>
+            <p className='text-helper2 line-through'>{originalPrice}</p>
+            <p className='text-c-4'>{discount}% Off</p>
+          </div>
+        </div>
+      </div>
+    )
+  }
+
+  if (varient === CARD_CONSTANTS.VARIANT.CART) {
+    return (
+      <div className='flex gap-4'>
+        <div className='w-1/4 aspect-[3/4] rounded-[20px] overflow-clip'>
+          <img className='w-full h-full object-cover' src={imgLink} alt={title} />
+        </div>
+
+        <div className='w-full'>
+          <h3 className='text-l2 w-full'>{title}</h3>
+
+          <div className='text-sm mt-1 w-full'>
+            <p>{category}</p>
+            <div className='text-helper2'>
+              <p>Size: UK 9</p>
+              <p>Color: Blue</p>
+              <p>Exttra: something</p>
+            </div>
+          </div>
+        </div>
+
+        <div className='w-1/3 '>
+          <div className=' text-right'>
+            <p className='text-l2'>{price}</p>
+            <p className='text-helper2 line-through'>{originalPrice}</p>
+            <p className='text-c-4'>{discount}% Off</p>
+          </div>
+
+          <div className='flex flex-col whitespace-nowrap'>
+            <button className='h-[40px] border px-4 rounded-full w-fit'
+              type="button">
+              Move to wishlist
+            </button>
+            <button className='text-helper2 underline' type="button">remove from cart</button>
+          </div>
+        </div>
+
+      </div>
+    )
+  }
+
+  if (varient === CARD_CONSTANTS.VARIANT.CHECKOUT) {
+    return (
+      <div className='flex gap-4'>
+
+
+        <div className='w-1/4'>
+          <div className='aspect-[3/4] rounded-lg overflow-clip'>
+            <img className='w-full h-full object-cover' src={imgLink} alt={title} />
+          </div>
+        </div>
+
+        <div className='w-full flex'>
+
+          <div className='w-full'>
+            <h3 className='text-lg w-full'>{title} when long</h3>
+            <div className='text-sm w-full'>
+              <p>{category}</p>
+              <div className='flex gap-1 flex-wrap text-helper2'>
+                <p>Size: UK 9</p>
+                <Divider horizontal />
+                <p>Color: Blue</p>
+                <Divider horizontal />
+                <p>Exttra: something</p>
+              </div>
+            </div>
+          </div>
+
+          <div className='text-right w-fit'>
+            <p className='text-lg'>{price}</p>
             <p className='text-helper2 line-through'>{originalPrice}</p>
             <p className='text-c-4'>{discount}% Off</p>
           </div>
