@@ -11,11 +11,11 @@ import Container from './Container.jsx';
 
 import ProductCard from './ProductCard.jsx';
 import ProductGroup from './ProductGroup.jsx';
-
 import TotalPriceCard from './TotalPriceCard.jsx'
-
 import CategoryGroup from './CategoryGroup.jsx';
 import AllProducts from './AllProducts.jsx';
+
+import SignInUp from './SignInUp.jsx';
 
 import SplitButton from './SplitButton.jsx';
 
@@ -33,5 +33,6 @@ export {
   ProductGroup,
   CategoryGroup,
   AllProducts,
-  SplitButton
-};
+  SplitButton,
+  SignInUp,
+}; 

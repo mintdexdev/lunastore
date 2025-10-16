@@ -1,5 +1,5 @@
 import React from 'react'
-import { CARD_CONSTANTS } from '@/app/constants/ProductCard.constants'
+import { CARD_CONSTANTS } from '@/app/constants/ui.constants'
 import { Divider } from '.'
 
 

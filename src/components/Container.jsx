@@ -10,13 +10,19 @@ export default function Container({
 ) {
   let variantClass = '';
 
+  if (variant === 'form') {
+    return (
+      <div className={twMerge(`max-w-[960px]  mx-auto`, className)} {...props}>
+        {children}
+      </div>
+    );
+  }
+
   switch (variant) {
     case 'text':
       variantClass = 'max-w-[60ch]';
       break;
-    case 'form':
-      variantClass = 'max-w-[960px]';
-      break;
+ 
     default:
       variantClass = 'max-w-[1920px]';
   }
