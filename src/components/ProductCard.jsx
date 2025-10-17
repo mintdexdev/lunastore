@@ -2,7 +2,6 @@ import React from 'react'
 import { CARD_CONSTANTS } from '@/app/constants/ui.constants'
 import { Divider } from '.'
 
-
 export default function ProductCard(
   { varient = CARD_CONSTANTS.VARIANT.DEFAULT,
 
@@ -28,6 +27,31 @@ export default function ProductCard(
           <h3 className='text-l1'>{title}</h3>
           <p className='text-helper4'>{description}</p>
           <p className='text-l1'>{price}</p>
+        </div>
+      </div>
+    )
+  }
+
+  if (varient === CARD_CONSTANTS.VARIANT.CATEGORY) {
+    return (
+      <div>
+        <div className='relative  text-c-1 p-6 aspect-[3/4] '>
+          <div className='absolute inset-0 -z-[1] rounded-3xl overflow-clip'>
+            <img className='w-full h-full ' src={imgLink} alt={title} />
+          </div>
+          <div className='ml-auto w-6 h-6 rounded-full overflow-clip'>
+            <div className='w-full h-full bg-c-4' />
+          </div>
+        </div>
+
+        <div className='flex flex-col gap-2 mt-2'>
+          <h3 className='text-l1'>{title}</h3>
+          <p className='text-helper4'>{description}</p>
+          <div className='flex gap-4 items-center'>
+            <p className='text-l1'>{price}</p>
+            <p className='text-helper2 line-through'>{originalPrice}</p>
+            <p className='text-c-4'>{discount}% Off</p>
+          </div>
         </div>
       </div>
     )

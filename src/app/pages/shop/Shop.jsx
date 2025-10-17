@@ -43,15 +43,16 @@ export default function Shop() {
 
       <section>
         <Container >
-          <div className='flex flex-col gap-2'>
+          <div className='grid gap-2'>
             <Banner
+              varient='h2'
               title='test Banner'
-              tagline='Everything you need, Everything you want'
-              className='rounded-md overflow-clip' />
+              tagline='Everything you need, Everything you want' />
             <Banner
+              varient='h2'
               title='test Banner2'
               tagline='Everything you need, Everything you want2'
-              className='rounded-md overflow-clip' />
+            />
 
           </div>
 
@@ -62,18 +63,21 @@ export default function Shop() {
         <Container className='gap-inside-section' >
 
           <ProductGroup
+            cardVarient="category"
             exploreBtn
 
             title="T-shirt"
             exploreText='Tshirt'
           />
           <ProductGroup
+            cardVarient="category"
             exploreBtn
 
             title="Pants"
             exploreText='Pants'
           />
           <ProductGroup
+            cardVarient="category"
             exploreBtn
 
             title="Shoes"
