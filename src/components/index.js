@@ -10,6 +10,7 @@ import Footer from './Footer.jsx';
 import Container from './Container.jsx';
 
 import ProductCard from './ProductCard.jsx';
+import OrderCard from './OrderCard.jsx';
 import ProductGroup from './ProductGroup.jsx';
 import TotalPriceCard from './TotalPriceCard.jsx'
 import CategoryGroup from './CategoryGroup.jsx';
@@ -30,6 +31,7 @@ export {
   Container,
   ProductCard,
   TotalPriceCard,
+  OrderCard,
   ProductGroup,
   CategoryGroup,
   AllProducts,

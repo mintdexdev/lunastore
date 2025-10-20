@@ -163,6 +163,36 @@ export default function ProductCard(
     )
   }
 
+  if (varient === CARD_CONSTANTS.VARIANT.ORDER_HISTORY) {
+    return (
+      <div className='flex gap-4'>
+
+        <div className='w-1/4'>
+          <div className='aspect-[3/4] rounded-lg overflow-clip'>
+            <img className='w-full h-full object-cover' src={imgLink} alt={title} />
+          </div>
+        </div>
+
+        <div className='w-full'>
+          <h3 className='text-lg w-full'>{title} when long</h3>
+          <div className='text-sm w-full'>
+            <p>{category}</p>
+            <div className='flex gap-1 flex-wrap text-helper2'>
+              <p>Quantity: 1</p>
+              <Divider horizontal />
+              <p>Size: UK 9</p>
+              <Divider horizontal />
+              <p>Color: Blue</p>
+              <Divider horizontal />
+              <p>Exttra: something</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    )
+  }
+
   return (
     <div>
       <div className='relative  text-c-1 p-6 aspect-[3/4] '>

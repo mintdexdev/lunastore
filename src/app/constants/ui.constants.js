@@ -12,7 +12,8 @@ export const CARD_CONSTANTS = {
     CATEGORY: "category",
     WISHLIST: "wishlist",
     CART: "cart",
-    CHECKOUT: "checkout"
+    CHECKOUT: "checkout",
+    ORDER_HISTORY: "order-history"
   },
 
   LAYOUT: {
