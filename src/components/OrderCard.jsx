@@ -2,7 +2,7 @@ import { Button, Divider, ProductCard } from "@/components";
 
 export default function OrderCard() {
   return (
-    <div className="border border-helper4 rounded-3xl p-4">
+    <div className="border border-helper4 rounded-2xl p-4">
 
       <div className="flex">
         <div className="w-full">
@@ -13,7 +13,7 @@ export default function OrderCard() {
           <Button className="rounded-lg whitespace-nowrap"
             varient="outline">Download Invoice</Button>
             <div className="whitespace-nowrap underline">
-              Options
+              |
             </div>
         </div>
       </div>
