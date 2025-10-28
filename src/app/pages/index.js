@@ -14,6 +14,7 @@ import SearchResult from './shop/SearchResult'
 import Summary from './shop/Summary'
 import Checkout from './shop/Checkout'
 import Wishlist from './shop/Wishlist'
+import  NavCategory  from './shop/NavCategory';
 
 export {
   Home,
@@ -30,5 +31,6 @@ export {
   Checkout,
   Shop,
   Summary,
-  Wishlist
+  Wishlist,
+  NavCategory
 };

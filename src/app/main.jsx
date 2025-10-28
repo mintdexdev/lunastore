@@ -1,6 +1,7 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import './index.css'
+import 'material-symbols';
 
 import { createBrowserRouter } from "react-router";
 import { RouterProvider } from "react-router/dom";
@@ -13,9 +14,9 @@ import {
   Account,
   Privacy,
   Terms,
-  Shop, Category, Product, Cart, Wishlist, Summary, Help, SearchResult, Checkout
+  Shop, Category, Product, Cart, Wishlist, Summary, Help, SearchResult, Checkout,
+  NavCategory
 } from './pages';
-
 
 const router = createBrowserRouter([
   {
@@ -31,6 +32,11 @@ const router = createBrowserRouter([
         path: "shop",
         children: [
           { index: true, Component: Shop },
+          { path: "offers", Component: NavCategory },
+          { path: "men", Component: NavCategory },
+          { path: "women", Component: NavCategory },
+          { path: "accessories", Component: NavCategory },
+          { path: "shoes", Component: NavCategory },
           { path: ":categorySlug", Component: Category },
           { path: "search-result", Component: SearchResult },
           { path: "cart", Component: Cart },

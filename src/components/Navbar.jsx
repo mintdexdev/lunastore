@@ -19,6 +19,15 @@ const navlist = [
   { name: "terms", link: "/terms" },
 ]
 
+const linkList = [
+  { name: "Shop", link: "/shop" },
+  { name: "Offers", link: "/shop/offers" },
+  { name: "Men", link: "/shop/men" },
+  { name: "Women", link: "/shop/women" },
+  { name: "Accessories", link: "/shop/accessories" },
+  { name: "Shoes", link: "/shop/shoes" },
+]
+
 export default function Navbar() {
   return (
     <nav className='bg-c-1a'>
@@ -26,16 +35,34 @@ export default function Navbar() {
         <div className='flex gap-2'>
           <span className='text-s1'>dev navbar</span>
           {navlist.map((item) => (
-            <Link className='text-sm '
+            <Link className='text-sm'
+              key={item.name}
               to={{ pathname: item.link, }}>
-              | {item.name} 
+              | {item.name}
             </Link>
           ))}
         </div>
       </Container>
       <Container>
-        <div className='flex gap-2 '>
-           Navbar
+        <div className='flex justify-between items-center'>
+          <div>
+            logo
+          </div>
+          <div className='flex gap-6'>
+            {linkList.map((item) => (
+              <Link className='text-sm'
+                key={item.name}
+                to={{ pathname: item.link, }}>
+                {item.name}
+              </Link>
+            ))}
+          </div>
+          <div className='flex gap-4'>
+            <span className="material-symbols-outlined">search</span>
+            <span className="material-symbols-outlined">favorite</span>
+            <span className="material-symbols-outlined">shopping_bag</span>
+            <span className="material-symbols-outlined">account_circle</span>
+          </div>
         </div>
       </Container>
     </nav >
