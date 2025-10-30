@@ -1,20 +1,19 @@
 // /shop/:categoryid
-import { AllProducts, Banner, Container, ProductGroup } from "@/components";
-import { Navigate, useParams } from "react-router";
+import { AllProducts, Banner, Container, ProductGroup } from '@/components';
+import { Navigate, useParams } from 'react-router';
 
 const categories = [
-  { "id": "1", "name": "T-Shirt", "slug": "t-shirt" },
+  { 'id': '1', 'name': 'T-Shirt', 'slug': 't-shirt' },
 ]
 
 const CategoryData = {
-  id: "1",
-  name: "T-Shirt",
-  slug: "t-shirt",
-  allProduct: ["p1", "p2", "p3"],
-  latestProduct: ["p1", "p2", "p3"],
-  trendingProduct: ["p1", "p2", "p3"],
+  id: '1',
+  name: 'T-Shirt',
+  slug: 't-shirt',
+  allProduct: ['p1', 'p2', 'p3'],
+  latestProduct: ['p1', 'p2', 'p3'],
+  trendingProduct: ['p1', 'p2', 'p3'],
 }
-
 
 export default function Category() {
   const { categorySlug } = useParams();
@@ -22,35 +21,34 @@ export default function Category() {
   // Find category by slug
   const category = categories.find(c => c.slug === categorySlug);
 
-  if (!category) return <Navigate to="/shop" replace />;
+  if (!category) return <Navigate to='/shop' replace />;
 
   return (
 
     <div className='flex flex-col gap-20'>
       <Banner
-        heading="Category"
+        heading='Category'
         title='T-shirts'
         tagline='Everything you need, Oversized, Polo, Fit, etc ' />
-
 
 
       <section>
         <Container className='gap-inside-section' >
 
           <ProductGroup
-            varient="latest"
+            varient='latest'
             cardVarient='embedded'
-            title="Latest Release. Take a look at what's new right now."
+            title='Latest Release. Take a look at whats new right now.'
           />
           <ProductGroup
             type='full'
             exploreBtn
-            title="Deals of the month. special discounted products."
+            title='Deals of the month. special discounted products.'
             exploreText='deals'
           />
           <ProductGroup
             type='full'
-            title="Trending this month. see what people love."
+            title='Trending this month. see what people love.'
           />
 
         </Container>

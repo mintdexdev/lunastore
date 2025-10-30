@@ -9,8 +9,6 @@ export default function Help() {
         title='from start to finish'
         tagline='Everything you need, Everything you want' />
 
-
-
       <section>
         <Container>
           help here

@@ -1,11 +1,11 @@
-import { Navigate } from "react-router";
+import { Navigate } from 'react-router';
 
 export default function Home() {
 
-  return <Navigate to="/shop" replace />;
+  return <Navigate to='/shop' replace />;
 
   return (
-    <div className="">
+    <div className=''>
       Landing or Home
 
     </div>

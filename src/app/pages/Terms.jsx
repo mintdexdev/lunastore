@@ -1,5 +1,4 @@
 import { Banner, Container } from '@/components'
-import React from 'react'
 
 export default function Terms() {
   return (
@@ -8,8 +7,6 @@ export default function Terms() {
             heading='terms and condition'
             title='from start to finish'
             tagline='Everything you need, Everything you want' />
-    
-    
     
           <section>
             <Container>

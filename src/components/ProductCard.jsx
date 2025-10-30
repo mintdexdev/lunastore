@@ -1,4 +1,3 @@
-import React from 'react'
 import { CARD_CONSTANTS } from '@/app/constants/ui.constants'
 import { Divider } from '.'
 
@@ -7,11 +6,11 @@ export default function ProductCard(
 
     imgLink = '/.temp/images/product.jpg',
     category = 'T-shirt',
-    title = "Title: Batman t-shirt",
-    description = "Embrace minimalist aesthetics with this half-zip shirt  brace minimalist aestheti brace minimali...",
-    price = "$199.99",
-    originalPrice = "$249.99",
-    discount = "35"
+    title = 'Title: Batman t-shirt',
+    description = 'Embrace minimalist aesthetics with this half-zip shirt  brace minimalist aestheti brace minimali...',
+    price = '$199.99',
+    originalPrice = '$249.99',
+    discount = '35'
   }
 ) {
   if (varient === CARD_CONSTANTS.VARIANT.EMBEDDED) {
@@ -115,10 +114,10 @@ export default function ProductCard(
 
           <div className='flex flex-col whitespace-nowrap'>
             <button className='h-[40px] border px-4 rounded-full w-fit'
-              type="button">
+              type='button'>
               Move to wishlist
             </button>
-            <button className='text-helper2 underline' type="button">remove from cart</button>
+            <button className='text-helper2 underline' type='button'>remove from cart</button>
           </div>
         </div>
 

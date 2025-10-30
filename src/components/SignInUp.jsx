@@ -4,7 +4,7 @@ import { Link } from 'react-router';
 import { AUTH_CONSTANTS } from '@/app/constants/auth.constants';
 import { Button, Container, Divider, SplitButton, TextField } from '@/components'
 
-const socialWith = ["Google", "Facebook", "X"]
+const socialWith = ['Google', 'Facebook', 'X']
 
 export default function SignInUp() {
   const [currentAuth, setcurrentAuth] = useState(AUTH_CONSTANTS.SIGN_IN);

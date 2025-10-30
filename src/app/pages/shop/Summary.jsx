@@ -6,7 +6,7 @@ export default function Summary() {
   return (
     <div>
       <Banner
-        varient="noImage"
+        varient='noImage'
         heading='summary'
         title='Summary of Order'
       />
@@ -25,8 +25,8 @@ export default function Summary() {
             </div>
 
             <div className='text-center'>
-              <p>Please check the delivery statusat <span className='underline'><Link to={{ pathname: "/track-order" }}>Order Tracking page</Link></span></p>
-              <Button className="bg-c-3 w-fit px-16 mt-2">Continue Shopping</Button>
+              <p>Please check the delivery statusat <span className='underline'><Link to={{ pathname: '/track-order' }}>Order Tracking page</Link></span></p>
+              <Button className='bg-c-3 w-fit px-16 mt-2'>Continue Shopping</Button>
             </div>
           </div>
         </Container>
@@ -54,9 +54,8 @@ export default function Summary() {
             </div>
           </div>
 
-
           <div className='w-1/2'>
-            <h2 className="text-l3">Ordered Product</h2>
+            <h2 className='text-l3'>Ordered Product</h2>
 
             <div className='grid gap-4 my-8'>
               <ProductCard varient='checkout' />

@@ -3,16 +3,16 @@ import { ProductCard } from '@/components'
 
 export default function ProductGroup(
   {
-    varient = "default",
-    cardVarient = "default",
+    varient = 'default',
+    cardVarient = 'default',
     exploreBtn = false,
 
-    title = "enter title here",
-    exploreText = "",
+    title = 'enter title here',
+    exploreText = '',
   }
 ) {
 
-  if (varient === "latest") {
+  if (varient === 'latest') {
     return (
 
       <div>

@@ -1,8 +1,8 @@
 export default function Divider(
   {
     horizontal = false,
-    thickness = "1px",
-    className = "",
+    thickness = '1px',
+    className = '',
   }
 ) {
 

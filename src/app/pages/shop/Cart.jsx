@@ -12,9 +12,9 @@ export default function Cart() {
   return (
     <div className='flex flex-col gap-20'>
       <Banner
-        heading="your cart"
-        title="Got the best deals"
-        tagline="ready to purchase" />
+        heading='your cart'
+        title='Got the best deals'
+        tagline='ready to purchase' />
       <section>
         <Container className='flex gap-6'>
 

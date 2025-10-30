@@ -1,5 +1,4 @@
 import { AllProducts, Banner, Container } from '@/components'
-import React from 'react'
 
 export default function Wishlist() {
   return (

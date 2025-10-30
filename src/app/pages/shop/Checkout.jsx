@@ -6,8 +6,8 @@ export default function Checkout() {
     <div className=''>
       <Banner
         varient='noImage'
-        heading="checkout"
-        title="Details Filling"
+        heading='checkout'
+        title='Details Filling'
       />
       <section>
         <Container className='flex gap-6'>
@@ -15,8 +15,8 @@ export default function Checkout() {
           <div className='w-8/12'>
 
             <div className='max-w-[960px] mx-auto'>
-              <div className="flex flex-col gap-4">
-                <h2 className="text-l3">Contact Details</h2>
+              <div className='flex flex-col gap-4'>
+                <h2 className='text-l3'>Contact Details</h2>
 
                 <div className='flex gap-4 w-full'>
                   <TextField label='First Name' />
@@ -29,8 +29,8 @@ export default function Checkout() {
                 <TextField label='Email Address' />
               </div>
 
-              <div className="flex flex-col gap-4">
-                <h2 className="text-l3">Delivery Address</h2>
+              <div className='flex flex-col gap-4'>
+                <h2 className='text-l3'>Delivery Address</h2>
 
                 <div className='flex gap-4 w-full'>
                   <TextField label='Pin Code' />
@@ -43,8 +43,8 @@ export default function Checkout() {
                 <TextField label='Email Address' />
               </div>
 
-              <div className="flex flex-col gap-4">
-                <h2 className="text-l3">Billing Address</h2>
+              <div className='flex flex-col gap-4'>
+                <h2 className='text-l3'>Billing Address</h2>
 
                 <div className='flex gap-4 w-full'>
                   <TextField label='First Name' />
@@ -62,7 +62,7 @@ export default function Checkout() {
 
           <div className='w-4/12'>
 
-            <h2 className="text-l3">Review your Order</h2>
+            <h2 className='text-l3'>Review your Order</h2>
 
             <div className='grid gap-4 my-8'>
               <ProductCard varient='checkout' />

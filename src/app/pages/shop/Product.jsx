@@ -3,49 +3,46 @@ import React from 'react'
 import { Navigate, useParams } from 'react-router';
 
 const product = {
-  sku: "URB-TSH-001",
-  slug: "plain-cotton",
-  brand: "Luna",
-  category: "tshirt",
+  sku: 'URB-TSH-001',
+  slug: 'plain-cotton',
+  brand: 'Luna',
+  category: 'tshirt',
   price: 899,
   discount: 50,
   rating: 4.6,
   stock: true,
 
-  name: "Plain Cotton",
+  name: 'Plain Cotton',
   options: {
-    colors: ["Blue", "Black", "White"],
-    sizes: ["S", "M", "L", "XL"],
-    // refLink: "size color reference"
+    colors: ['Blue', 'Black', 'White'],
+    sizes: ['S', 'M', 'L', 'XL'],
+    // refLink: 'size color reference'
   },
   images: [
-    "/.temp/images/product.jpg",
-    "/.temp/images/product.jpg",
-    "/.temp/images/product.jpg",
+    '/.temp/images/product.jpg',
+    '/.temp/images/product.jpg',
+    '/.temp/images/product.jpg',
   ],
-  description: "A soft, breathable cotton t-shirt designed for everyday comfort and style. Perfect for layering or casual wear.",
+  description: 'A soft, breathable cotton t-shirt designed for everyday comfort and style. Perfect for layering or casual wear.',
   details: {
-    fit: "Oversize",
-    material: "100% Cotton",
-    otherDetails: "something",
-    otherDetails2: "something2",
+    fit: 'Oversize',
+    material: '100% Cotton',
+    otherDetails: 'something',
+    otherDetails2: 'something2',
   },
   allDetails: {
-    type: "Overized Cotten T-Shirt",
-    gender: "Unisex",
-    sleeve: "Half Sleeve",
-    neck: "Round Neck",
-    materialCare: "Machine wash cold with similar colors. Do not bleach.",
-    weight: "300 g",
-    pattern: "Plain",
-    origin: "India",
-    packageContent: "1 T-Shirt",
+    type: 'Overized Cotten T-Shirt',
+    gender: 'Unisex',
+    sleeve: 'Half Sleeve',
+    neck: 'Round Neck',
+    materialCare: 'Machine wash cold with similar colors. Do not bleach.',
+    weight: '300 g',
+    pattern: 'Plain',
+    origin: 'India',
+    packageContent: '1 T-Shirt',
   }
 
 };
-
-
-
 
 
 export default function Product() {
@@ -65,7 +62,7 @@ export default function Product() {
               <div className='flex gap-4 overflow-clip '>
                 {[1, 2].map(item => (
                   <div className='rounded-2xl shrink-0 overflow-clip w-3/4 aspect-[3/4]  '>
-                    <img className='w-full h-full object-cover' src={product.images[0]} alt="" />
+                    <img className='w-full h-full object-cover' src={product.images[0]} alt='' />
                   </div>
                 ))}
               </div>
@@ -73,7 +70,7 @@ export default function Product() {
               <div className='grid grid-cols-6 gap-2 mt-4 '>
                 {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10].map(item => (
                   <div className='rounded-lg overflow-clip aspect-[3/4]'>
-                    <img className='w-full h-full object-cover' src={product.images[0]} alt="" />
+                    <img className='w-full h-full object-cover' src={product.images[0]} alt='' />
                   </div>
                 ))}
               </div>
@@ -102,7 +99,7 @@ export default function Product() {
                   </div>
                   <Divider />
                   <div className='flex gap-2 p-4'>
-                    {["blue", "red", "pink"].map(item => (
+                    {['blue', 'red', 'pink'].map(item => (
                       <div className='bg-neutral-600 w-20 aspect-[3/4] rounded-lg'
                         key={item}>
                       </div>
@@ -115,7 +112,7 @@ export default function Product() {
                   </div>
                   <Divider />
                   <div className='flex gap-2 p-4'>
-                    {["sm", "medium", "large"].map(item => (
+                    {['sm', 'medium', 'large'].map(item => (
                       <Chips key={item} text={item} />
                     ))}
                   </div>

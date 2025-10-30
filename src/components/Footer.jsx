@@ -2,54 +2,54 @@ import { Container, Divider } from '@/components'
 import { Link } from 'react-router'
 
 const footerData = {
-  country: "India",
-  creater: { name: "mintdexdev", link: "minter" },
+  country: 'India',
+  creater: { name: 'mintdexdev', link: 'minter' },
   links: [
     {
-      heading: "About",
+      heading: 'About',
       linkList:
         [
-          { name: "Facebook", link: "link", },
-          { name: "Instagram", link: 'link', },
-          { name: "X", link: 'link', },
+          { name: 'Facebook', link: 'link', },
+          { name: 'Instagram', link: 'link', },
+          { name: 'X', link: 'link', },
         ]
     },
     {
-      heading: "Store",
+      heading: 'Store',
       linkList:
         [
-          { name: "Facebook", link: "link", },
-          { name: "Instagram", link: 'link', },
-          { name: "X", link: 'link', },
+          { name: 'Facebook', link: 'link', },
+          { name: 'Instagram', link: 'link', },
+          { name: 'X', link: 'link', },
         ]
     },
     {
-      heading: "Company",
+      heading: 'Company',
       linkList:
         [
-          { name: "Facebook", link: "link", },
-          { name: "Instagram", link: 'link', },
-          { name: "X", link: 'link', },
+          { name: 'Facebook', link: 'link', },
+          { name: 'Instagram', link: 'link', },
+          { name: 'X', link: 'link', },
         ]
     },
     {
-      heading: "Extra",
+      heading: 'Extra',
       linkList:
         [
-          { name: "Facebook", link: "link", },
-          { name: "Instagram", link: 'link', },
-          { name: "X", link: 'link', },
+          { name: 'Facebook', link: 'link', },
+          { name: 'Instagram', link: 'link', },
+          { name: 'X', link: 'link', },
         ]
     },
   ],
   socialLinks: [
-    { name: "Facebook", link: "link", },
-    { name: "Instagram", link: 'link', },
-    { name: "X", link: 'link', },
+    { name: 'Facebook', link: 'link', },
+    { name: 'Instagram', link: 'link', },
+    { name: 'X', link: 'link', },
   ],
   legalLinks: [
-    { name: "Privacy policy", link: 'solid' },
-    { name: "Terms of use", link: 'solid' }
+    { name: 'Privacy policy', link: 'solid' },
+    { name: 'Terms of use', link: 'solid' }
   ]
 }
 

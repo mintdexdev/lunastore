@@ -1,18 +1,17 @@
-import React from 'react'
 import { twMerge } from 'tailwind-merge'
 
 export default function Banner(
   {
     imgLink = '/.temp/images/banner.jpg',
-    imgAlt = "Banner",
-    heading = "",
-    title = "Title",
-    tagline = "",
-    varient = "default",
-    className = ""
+    imgAlt = 'Banner',
+    heading = '',
+    title = 'Title',
+    tagline = '',
+    varient = 'default',
+    className = ''
   }
 ) {
-  if (varient === "noImage") {
+  if (varient === 'noImage') {
     return (
       <div className={`max-w-[1920px] mx-auto aspect-[5/1] grid place-items-center ${className}`}>
 
@@ -26,9 +25,9 @@ export default function Banner(
     )
   }
 
-  if (varient === "h2") {
+  if (varient === 'h2') {
     return (
-      <div className={twMerge("relative aspect-[3/1] text-c-1 grid place-items-center rounded-md overflow-clip", className)}>
+      <div className={twMerge('relative aspect-[3/1] text-c-1 grid place-items-center rounded-md overflow-clip', className)}>
 
         <div className='top-0 absolute aspect-[3/1] overflow-clip -z-[1]'>
           <img className='w-full h-full object-cover' src={imgLink} alt={imgAlt} />
@@ -45,7 +44,7 @@ export default function Banner(
   }
 
   return (
-    <div className={twMerge("relative aspect-[3/1] text-c-1 grid place-items-center", className)}>
+    <div className={twMerge('relative aspect-[3/1] text-c-1 grid place-items-center', className)}>
 
       <div className='top-0 absolute aspect-[3/1] overflow-clip -z-[1]'>
         <img className='w-full h-full object-cover' src={imgLink} alt={imgAlt} />

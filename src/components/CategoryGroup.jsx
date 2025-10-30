@@ -1,8 +1,6 @@
-import React from 'react'
-
-export default function CategoryGroup(
+ export default function CategoryGroup(
   {
-    title = "All Categories",
+    title = 'All Categories',
     imgLink = '/.temp/images/category.jpg',
   }
 ) {

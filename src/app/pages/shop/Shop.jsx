@@ -1,5 +1,4 @@
 import { Banner, CategoryGroup, Container, ProductGroup } from '@/components'
-import React from 'react'
 
 export default function Shop() {
   return (
@@ -14,19 +13,19 @@ export default function Shop() {
         <Container className='gap-inside-section' >
 
           <ProductGroup
-            varient="latest"
+            varient='latest'
             cardVarient='embedded'
-            title="Latest Release. Take a look at what's new right now."
+            title='Latest Release. Take a look at whats new right now.'
           />
           <ProductGroup
             type='full'
             exploreBtn
-            title="Deals of the month. special discounted products."
+            title='Deals of the month. special discounted products.'
             exploreText='deals'
           />
           <ProductGroup
             type='full'
-            title="Trending this month. see what people love."
+            title='Trending this month. see what people love.'
           />
 
         </Container>
@@ -63,30 +62,29 @@ export default function Shop() {
         <Container className='gap-inside-section' >
 
           <ProductGroup
-            cardVarient="category"
+            cardVarient='category'
             exploreBtn
 
-            title="T-shirt"
+            title='T-shirt'
             exploreText='Tshirt'
           />
           <ProductGroup
-            cardVarient="category"
+            cardVarient='category'
             exploreBtn
 
-            title="Pants"
+            title='Pants'
             exploreText='Pants'
           />
           <ProductGroup
-            cardVarient="category"
+            cardVarient='category'
             exploreBtn
 
-            title="Shoes"
+            title='Shoes'
             exploreText='Shoes'
           />
 
         </Container>
       </section>
-
 
     </div>
   )
