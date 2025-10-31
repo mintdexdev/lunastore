@@ -1,4 +1,4 @@
-import { Button, Container, OrderCard } from '@/components'
+import { Container, OrderCard } from '@/components';
 
 const navList = ['Account Details', 'Order History', 'Billing and Payments', 'Customer support', 'Settings']
 

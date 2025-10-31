@@ -1,4 +1,4 @@
-import { AllProducts, Banner, Container } from '@/components'
+import { AllProducts, Banner, Container } from '@/components';
 
 export default function Wishlist() {
   return (

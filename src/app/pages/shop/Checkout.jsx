@@ -1,5 +1,4 @@
-import { Banner, Container, Divider, ProductCard, TextField, TotalPriceCard } from '@/components'
-import React from 'react'
+import { Banner, Container, Divider, ProductCard, TextField, TotalPriceCard } from '@/components';
 
 export default function Checkout() {
   return (

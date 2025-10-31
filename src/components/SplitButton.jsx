@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { TextField } from '@/components'
+import { TextField } from '@/components';
 import { SPLIT_BUTTON } from '@/app/constants/ui.constants';
 
 export default function SplitButton({

@@ -1,5 +1,5 @@
-import { CARD_CONSTANTS } from '@/app/constants/ui.constants'
-import { Divider } from '.'
+import { CARD_CONSTANTS } from '@/app/constants/ui.constants';
+import { Divider } from '.';
 
 export default function ProductCard(
   { varient = CARD_CONSTANTS.VARIANT.DEFAULT,

@@ -1,5 +1,5 @@
-import { Container, Divider } from '@/components'
-import { Link } from 'react-router'
+import { Container, Divider } from '@/components';
+import { Link } from 'react-router';
 
 const footerData = {
   country: 'India',

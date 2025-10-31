@@ -1,5 +1,4 @@
-import { Banner, Container } from '@/components'
-import React from 'react'
+import { Banner, Container } from '@/components';
 
 export default function Help() {
   return (

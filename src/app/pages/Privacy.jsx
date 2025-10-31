@@ -1,4 +1,4 @@
-import { Banner, Container } from '@/components'
+import { Banner, Container } from '@/components';
 
 export default function Privacy() {
   return (

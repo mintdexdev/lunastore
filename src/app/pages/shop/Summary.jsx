@@ -1,6 +1,5 @@
-import { Banner, Button, Container, ProductCard } from '@/components'
-import React from 'react'
-import { Link } from 'react-router'
+import { Banner, Button, Container, ProductCard } from '@/components';
+import { Link } from 'react-router';
 
 export default function Summary() {
   return (

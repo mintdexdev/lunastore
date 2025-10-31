@@ -5,8 +5,7 @@ import {
   ProductCard,
   SplitButton,
   TotalPriceCard
-} from '@/components'
-import React from 'react'
+} from '@/components';
 
 export default function Cart() {
   return (

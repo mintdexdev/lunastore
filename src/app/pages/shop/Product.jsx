@@ -1,6 +1,4 @@
 import { AllProducts, Banner, Chips, Container, Divider } from '@/components';
-import React from 'react'
-import { Navigate, useParams } from 'react-router';
 
 const product = {
   sku: 'URB-TSH-001',

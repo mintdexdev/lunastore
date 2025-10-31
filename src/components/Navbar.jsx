@@ -1,5 +1,5 @@
-import { Container } from '@/components'
-import { Link } from 'react-router'
+import { Container } from '@/components';
+import { Link } from 'react-router';
 
 const navlist = [
   { name: 'Shop', link: '/shop' },

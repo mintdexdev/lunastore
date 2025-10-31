@@ -1,4 +1,4 @@
-import { Banner, CategoryGroup, Container, ProductGroup } from '@/components'
+import { Banner, CategoryGroup, Container, ProductGroup } from '@/components';
 
 export default function Shop() {
   return (
