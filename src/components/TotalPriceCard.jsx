@@ -12,7 +12,7 @@ export default function TotalPriceCard() {
           inputType='text' />
       </div>
 
-      <div className='bg-c-1a rounded-2xl '>
+      <div className='bg-secondary-a rounded-2xl '>
         <div className='flex justify-between p-4'>
           <div>
             <p>Subtotal</p>

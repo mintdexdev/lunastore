@@ -17,7 +17,7 @@ export default function Banner(
 
         <div className='text-center'>
           <p className='text-sm uppercase'>{heading}</p>
-          <h1 className='text-l7'>{title}</h1>
+          <h1 className='text-l6'>{title}</h1>
           <p className='text-l2'>{tagline}</p>
         </div>
 
@@ -44,15 +44,15 @@ export default function Banner(
   }
 
   return (
-    <div className={twMerge('relative aspect-[3/1] text-c-1 grid place-items-center', className)}>
+    <div className={twMerge('relative aspect-[3/1] grid place-items-center text-primary', className)}>
 
       <div className='top-0 absolute aspect-[3/1] overflow-clip -z-[1]'>
         <img className='w-full h-full object-cover' src={imgLink} alt={imgAlt} />
       </div>
 
-      <div className='text-center text-shadow-helper1 text-shadow-lg'>
+      <div className='text-center text-shadow-neutral-a text-shadow-lg'>
         <p className='text-sm uppercase'>{heading}</p>
-        <h1 className='text-l7'>{title}</h1>
+        <h1 className='text-l6'>{title}</h1>
         <p className='text-l2'>{tagline}</p>
       </div>
 

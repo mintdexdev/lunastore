@@ -25,7 +25,7 @@ export default function Summary() {
 
             <div className='text-center'>
               <p>Please check the delivery statusat <span className='underline'><Link to={{ pathname: '/track-order' }}>Order Tracking page</Link></span></p>
-              <Button className='bg-c-3 w-fit px-16 mt-2'>Continue Shopping</Button>
+              <Button className='bg-tertiary w-fit px-16 mt-2'>Continue Shopping</Button>
             </div>
           </div>
         </Container>
@@ -37,7 +37,7 @@ export default function Summary() {
           <div className='w-1/2 '>
             <h2 className='text-l3'>Transaction Details</h2>
 
-            <div className='p-6 rounded-3xl bg-c-1a'>
+            <div className='p-6 rounded-3xl bg-primary-a'>
               <div className='grid gap-2'>
                 <div>TransactionId</div>
                 <div>SomeId</div>

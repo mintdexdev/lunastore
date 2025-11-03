@@ -91,7 +91,7 @@ export default function Product() {
 
               <div>
                 <h3 className='text-l2'>Options</h3>
-                <div className='bg-c-1a rounded-2xl mt-2'>
+                <div className='bg-primary-a rounded-2xl mt-2'>
                   <div className='px-4 py-2'>
                     <h4>Color</h4>
                   </div>
@@ -104,7 +104,7 @@ export default function Product() {
                     ))}
                   </div>
                 </div>
-                <div className='bg-c-1a rounded-2xl mt-2'>
+                <div className='bg-primary-a rounded-2xl mt-2'>
                   <div className='px-4 py-2'>
                     <h4>Size</h4>
                   </div>
@@ -119,14 +119,14 @@ export default function Product() {
 
               <div>
                 <h3 className='text-l2'>Description</h3>
-                <div className='mt-2 p-4 bg-c-1a rounded-2xl'>
+                <div className='mt-2 p-4 bg-primary-a rounded-2xl'>
                   <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus nostrum tenetur dignissimos dolor, aut porro labore ea quae dolorum non assumenda at saepe quisquam, dolore aspernatur eveniet, mollitia ratione! Cumque ipsam nulla, sit, dignissimos doloribus cupiditate sed et in consectetur id consequatur neque dolore, delectus laborum maiores earum iusto nostrum.</p>
                 </div>
               </div>
 
               <div>
                 <h3 className='text-l2'>Details</h3>
-                <div className='mt-2 p-4 bg-c-1a rounded-2xl'>
+                <div className='mt-2 p-4 bg-primary-a rounded-2xl'>
                   {Object.entries(product.details).map(arr => (
                     <div className='flex border-b px-4 py-1'
                       key={arr[0]}>
@@ -149,7 +149,7 @@ export default function Product() {
 
           <h2 className='text-l4'>Additional Details</h2>
           <div className='flex gap-6'>
-            <div className='w-1/2 bg-c-1a p-4 rounded-2xl'>
+            <div className='w-1/2 bg-primary-a p-4 rounded-2xl'>
 
               <h3 className='text-l2'>Alldetails</h3>
               {Object.entries(product.allDetails).map(arr => (
@@ -162,12 +162,12 @@ export default function Product() {
             </div>
 
             <div className='w-1/2'>
-              <div className='bg-c-1a p-4 rounded-2xl'>
+              <div className='bg-primary-a p-4 rounded-2xl'>
                 <h3 className='text-l2'>Shipping  and return</h3>
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro earum minus consequuntur aliquid quaerat suscipit possimus, dolores iure ad inventore.</p>
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro earum minus consequuntur aliquid quaerat suscipit possimus, dolores iure ad inventore.</p>
               </div>
-              <div className='bg-c-1a p-4 rounded-2xl mt-6'>
+              <div className='bg-primary-a p-4 rounded-2xl mt-6'>
                 <h3 className='text-l2'>Manfacture's address</h3>
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro earum minus consequuntur aliquid quaerat suscipit possimus, dolores iure ad inventore.</p>
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro earum minus consequuntur aliquid quaerat suscipit possimus, dolores iure ad inventore.</p>

@@ -8,10 +8,10 @@ export default function Divider(
 
   if (horizontal) {
     return (
-      <div className={`w-[${thickness}] bg-helper4 ${className}`} />
+      <div className={`w-[${thickness}] bg-neutral-d ${className}`} />
     )
   }
   return (
-    <div className={`h-[1px] bg-helper4 ${className}`} />
+    <div className={`h-[1px] bg-neutral-d ${className}`} />
   )
 }

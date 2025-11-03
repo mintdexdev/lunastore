@@ -29,7 +29,7 @@ const linkList = [
 
 export default function Navbar() {
   return (
-    <nav className='bg-c-1a'>
+    <nav className='bg-primary-a'>
       <Container>
         <div className='flex gap-2'>
           <span className='text-s1'>dev navbar</span>

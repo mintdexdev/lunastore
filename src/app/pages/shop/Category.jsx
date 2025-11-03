@@ -33,7 +33,7 @@ export default function Category() {
 
 
       <section>
-        <Container className='gap-inside-section' >
+        <Container className='grid gap-20' >
 
           <ProductGroup
             varient='latest'

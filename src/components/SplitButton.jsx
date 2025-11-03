@@ -23,7 +23,7 @@ export default function SplitButton({
           className='rounded-[2rem_0.25rem_0.25rem_2rem]'
         />
         <button className={`text-c-1 px-4 rounded-[0.25rem_2rem_2rem_0.25rem] whitespace-nowrap 
-        ${focused ? 'bg-c-3' : 'bg-c-2a'}`}
+        ${focused ? 'bg-tertiary' : 'bg-secondary-a'}`}
           type='button'>{children}</button>
       </div>
     )
@@ -40,7 +40,7 @@ export default function SplitButton({
         className='rounded-[0.5rem_0.25rem_0.25rem_0.5rem]'
       />
       <button className={`text-c-1 px-4 rounded-[0.25rem_0.5rem_0.5rem_0.25rem] whitespace-nowrap 
-        ${focused ? 'bg-c-3' : 'bg-c-2a'}`}
+        ${focused ? 'bg-tertiary' : 'bg-secondary-a'}`}
         type='button'>{children}</button>
     </div>
   )

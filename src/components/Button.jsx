@@ -22,7 +22,7 @@ export default function Button({
 
   return (
     <button
-      className={twMerge('block h-10 px-4 w-full rounded-full bg-c-2a text-white', className)}
+      className={twMerge('block h-10 px-4 w-full rounded-full bg-tertiary text-primary', className)}
       type={type}
       {...props}
     >

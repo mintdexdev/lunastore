@@ -55,7 +55,7 @@ const footerData = {
 
 export default function Footer() {
   return (
-    <footer className='mt-8 pt-20 bg-c-2a text-c-1 '>
+    <footer className='mt-8 pt-20 bg-secondary-a text-c-1 '>
       <Container className=' grid gap-8'>
         <nav className='flex gap-6 '>
           {footerData.links.map(item => (

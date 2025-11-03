@@ -20,7 +20,7 @@ export default function Account() {
           <nav>
             <ul className='grid'>
               {navList.map(item => (
-                <li className='rounded-xl px-[13px] py-2.5 hover-bg-helper5'
+                <li className='rounded-xl px-[13px] py-2.5 hover:bg-neutral-e'
                   key={item}
                 >{item}
                 </li>

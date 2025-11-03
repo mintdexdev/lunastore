@@ -2,15 +2,13 @@ import { Banner, CategoryGroup, Container, ProductGroup } from '@/components';
 
 export default function Shop() {
   return (
-    <div className='flex flex-col gap-20'>
+    <div className='flex flex-col gap-40'>
       <Banner
         title='Buy all you want'
         tagline='Everything you need, Everything you want' />
 
-
-
       <section>
-        <Container className='gap-inside-section' >
+        <Container className='grid gap-20' >
 
           <ProductGroup
             varient='latest'
@@ -32,7 +30,7 @@ export default function Shop() {
       </section>
 
       <section >
-        <Container className='gap-inside-section' >
+        <Container className='grid gap-20' >
 
           <CategoryGroup title='All Categories - test' />
           <CategoryGroup title='Collection - test' />
@@ -59,7 +57,7 @@ export default function Shop() {
       </section>
 
       <section>
-        <Container className='gap-inside-section' >
+        <Container className='grip gap-20' >
 
           <ProductGroup
             cardVarient='category'

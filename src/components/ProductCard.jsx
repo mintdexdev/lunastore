@@ -39,7 +39,7 @@ export default function ProductCard(
             <img className='w-full h-full ' src={imgLink} alt={title} />
           </div>
           <div className='ml-auto w-6 h-6 rounded-full overflow-clip'>
-            <div className='w-full h-full bg-c-4' />
+            <div className='w-full h-full bg-c-error' />
           </div>
         </div>
 
@@ -64,14 +64,14 @@ export default function ProductCard(
             <img className='w-full h-full ' src={imgLink} alt={title} />
           </div>
           <div className='ml-auto w-6 h-6 rounded-full overflow-clip'>
-            <div className='w-full h-full bg-c-4' />
+            <div className='w-full h-full bg-c-error' />
           </div>
         </div>
 
         <div className='flex flex-col gap-2 mt-2'>
           <div>
             <p>{category}</p>
-            <div className='h-[1px] bg-helper3' />
+            <div className='h-[1px] bg-neutral-c' />
           </div>
           <h3 className='text-l1'>{title}</h3>
           <p className='text-helper4'>{description}</p>
@@ -199,14 +199,14 @@ export default function ProductCard(
           <img className='w-full h-full' src={imgLink} alt={title} />
         </div>
         <div className='ml-auto w-6 h-6 rounded-full overflow-clip'>
-          <div className='w-full h-full bg-c-3' />
+          <div className='w-full h-full bg-tertiary' />
         </div>
       </div>
 
       <div className='flex flex-col gap-2 mt-2'>
         <div>
           <p>{category}</p>
-          <div className='h-[1px] bg-helper3' />
+          <div className='h-[1px] bg-neutral-c' />
         </div>
         <h3 className='text-l1'>{title}</h3>
         <p className='text-helper4'>{description}</p>
