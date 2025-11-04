@@ -15,7 +15,7 @@ export default function ProductCard(
 ) {
   if (varient === CARD_CONSTANTS.VARIANT.EMBEDDED) {
     return (
-      <div className='relative p-6 aspect-[3/4] text-c-1'>
+      <div className='relative p-6 aspect-[3/4] text-primary'>
 
         <div className='absolute inset-0 -z-[1] rounded-3xl overflow-clip'>
           <img className='w-full h-full' src={imgLink} alt={title} />
@@ -34,7 +34,7 @@ export default function ProductCard(
   if (varient === CARD_CONSTANTS.VARIANT.CATEGORY) {
     return (
       <div>
-        <div className='relative  text-c-1 p-6 aspect-[3/4] '>
+        <div className='relative  text-primary p-6 aspect-[3/4] '>
           <div className='absolute inset-0 -z-[1] rounded-3xl overflow-clip'>
             <img className='w-full h-full ' src={imgLink} alt={title} />
           </div>
@@ -59,7 +59,7 @@ export default function ProductCard(
   if (varient === CARD_CONSTANTS.VARIANT.WISHLIST) {
     return (
       <div>
-        <div className='relative  text-c-1 p-6 aspect-[3/4] '>
+        <div className='relative  text-primary p-6 aspect-[3/4] '>
           <div className='absolute inset-0 -z-[1] rounded-3xl overflow-clip'>
             <img className='w-full h-full ' src={imgLink} alt={title} />
           </div>
@@ -194,7 +194,7 @@ export default function ProductCard(
 
   return (
     <div>
-      <div className='relative  text-c-1 p-6 aspect-[3/4] '>
+      <div className='relative  text-primary p-6 aspect-[3/4] '>
         <div className='absolute inset-0 -z-[1] rounded-3xl overflow-clip'>
           <img className='w-full h-full' src={imgLink} alt={title} />
         </div>

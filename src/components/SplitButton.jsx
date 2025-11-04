@@ -22,8 +22,8 @@ export default function SplitButton({
           onBlur={() => setFocused(false)}
           className='rounded-[2rem_0.25rem_0.25rem_2rem]'
         />
-        <button className={`text-c-1 px-4 rounded-[0.25rem_2rem_2rem_0.25rem] whitespace-nowrap 
-        ${focused ? 'bg-tertiary' : 'bg-secondary-a'}`}
+        <button className={`text-secondary px-4 rounded-[0.25rem_2rem_2rem_0.25rem] whitespace-nowrap 
+        ${focused ? 'bg-tertiary' : 'border-secondary'}`}
           type='button'>{children}</button>
       </div>
     )
@@ -37,10 +37,10 @@ export default function SplitButton({
         type={inputType}
         onFocus={() => setFocused(true)}
         onBlur={() => setFocused(false)}
-        className='rounded-[0.5rem_0.25rem_0.25rem_0.5rem]'
+        className='rounded-[0.75rem_0.25rem_0.25rem_0.75rem]'
       />
-      <button className={`text-c-1 px-4 rounded-[0.25rem_0.5rem_0.5rem_0.25rem] whitespace-nowrap 
-        ${focused ? 'bg-tertiary' : 'bg-secondary-a'}`}
+      <button className={`text-secondary px-4 rounded-[0.25rem_0.75rem_0.75rem_0.25rem] whitespace-nowrap border
+        ${focused ? 'bg-tertiary' : 'border-secondary'}`}
         type='button'>{children}</button>
     </div>
   )
