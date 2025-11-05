@@ -9,10 +9,12 @@ export default function TotalPriceCard() {
         <SplitButton
           label='Coupen Code'
           inputId='coupenCode'
-          inputType='text' />
+          inputType='text' >
+            Apply
+          </SplitButton>
       </div>
 
-      <div className='bg-secondary-a rounded-2xl '>
+      <div className=' rounded-2xl '>
         <div className='flex justify-between p-4'>
           <div>
             <p>Subtotal</p>

@@ -21,13 +21,17 @@ export default function Container({
     case 'text':
       variantClass = 'max-w-[60ch]';
       break;
- 
-    default:
+
+    case 'noPadding':
       variantClass = 'max-w-[1920px]';
+      break;
+
+    default:
+      variantClass = 'max-w-[1920px] px-16-80 ';
   }
 
   return (
-    <div className={twMerge(`${variantClass} px-16-80 mx-auto`, className)} {...props}>
+    <div className={twMerge(`${variantClass} mx-auto`, className)} {...props}>
       {children}
     </div>
   );

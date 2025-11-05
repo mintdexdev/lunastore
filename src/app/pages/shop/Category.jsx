@@ -55,20 +55,18 @@ export default function Category() {
       </section>
 
       <section>
-        <Container >
-          <div className='flex flex-col gap-2'>
-            <Banner
-              title='test Banner'
-              tagline='Everything you need, Everything you want'
-              className='rounded-md overflow-clip' />
-            <Banner
-              title='test Banner2'
-              tagline='Everything you need, Everything you want2'
-              className='rounded-md overflow-clip' />
 
-          </div>
+        <div className='grid gap-6'>
+          <Banner
+            varient='full'
+            title='test Banner'
+            tagline='Everything you need, Everything you want' />
+          <Banner
+            varient='sub'
+            title='test Banner2'
+            tagline='Everything you need, Everything you want2' />
+        </div>
 
-        </Container>
       </section>
 
       <section>

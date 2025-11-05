@@ -185,6 +185,13 @@
    --spacing-16-80: clamp(1rem, 0.0769rem + 4.1026vw, 5rem);
    --spacing-16-24: clamp(1rem, 0.8846rem + 0.5128vw, 1.5rem);
 
+   --breakpoint-sm: 40rem;
+   --breakpoint-md: 48rem;
+   --breakpoint-lg: 64rem;
+   --breakpoint-xl: 80rem;
+   --breakpoint-wd: 96rem;
+   --breakpoint-uw: 128rem;
+
  }
 
  .material-symbols-outlined {
