@@ -4,9 +4,33 @@ export default function Shop() {
   return (
     <div className='flex flex-col gap-40'>
       <section>
-        <Banner
-          title='Buy all you want'
-          tagline='Everything you need, Everything you want' />
+        <div className="grid gap-6">
+          <Banner
+            heading='Store'
+            title={`Luna's Store`}
+            tagline='Everything you need, Everything you want' />
+          <Banner
+            varient='sub'
+            title='featured or new release carosal here'
+            tagline='tagline-here'
+          />
+          <Banner
+            varient='sub'
+            title='featured Collection banner 2s'
+            tagline='tagline-here'
+          />
+          <Banner
+            varient='sub'
+            title='featured Collection banner 2s'
+            tagline='tagline-here'
+          />
+        </div>
+      </section>
+
+      <section >
+        <Container className='grid gap-20' >
+          <CategoryGroup title='Nav Category - test' />
+        </Container>
       </section>
 
       <section>
@@ -31,56 +55,20 @@ export default function Shop() {
         </Container>
       </section>
 
-      <section >
-        <Container className='grid gap-20' >
-
-          <CategoryGroup title='All Categories - test' />
-          <CategoryGroup title='Collection - test' />
-
-        </Container>
-      </section>
-
       <section>
         <Container variant='noPadding' >
           <div className='grid gap-2'>
             <Banner
               varient='sub'
-              title='test Banner'
-              tagline='Everything you need, Everything you want' />
+              title='old Collection banner '
+              tagline='tagline-here'
+            />
             <Banner
               varient='sub'
-              title='test Banner2'
-              tagline='Everything you need, Everything you want2'
+              title='old Collection banner 2s'
+              tagline='tagline-here'
             />
           </div>
-        </Container>
-      </section>
-
-      <section>
-        <Container className='grip gap-20' >
-
-          <ProductGroup
-            cardVarient='category'
-            exploreBtn
-
-            title='T-shirt'
-            exploreText='Tshirt'
-          />
-          <ProductGroup
-            cardVarient='category'
-            exploreBtn
-
-            title='Pants'
-            exploreText='Pants'
-          />
-          <ProductGroup
-            cardVarient='category'
-            exploreBtn
-
-            title='Shoes'
-            exploreText='Shoes'
-          />
-
         </Container>
       </section>
 
