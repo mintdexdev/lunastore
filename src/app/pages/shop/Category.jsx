@@ -24,13 +24,20 @@ export default function Category() {
   if (!category) return <Navigate to='/shop' replace />;
 
   return (
-
-    <div className='flex flex-col gap-20'>
-      <Banner
-        heading='Category'
-        title='T-shirts'
-        tagline='Everything you need, Oversized, Polo, Fit, etc ' />
-
+    <main className='flex flex-col gap-20'>
+      <section>
+        <div className='grid gap-6'>
+          <Banner
+            heading='Category'
+            title='T-shirts'
+            tagline='Everything you need, Oversized, Polo, Fit, etc ' />
+          <Banner
+            varient='sub'
+            title='featured or new release carosal here'
+            tagline='tagline-here'
+          />
+        </div>
+      </section>
 
       <section>
         <Container className='grid gap-20' >
@@ -55,28 +62,12 @@ export default function Category() {
       </section>
 
       <section>
-
-        <div className='grid gap-6'>
-          <Banner
-            varient='full'
-            title='test Banner'
-            tagline='Everything you need, Everything you want' />
-          <Banner
-            varient='sub'
-            title='test Banner2'
-            tagline='Everything you need, Everything you want2' />
-        </div>
-
-      </section>
-
-      <section>
         <Container>
 
           <AllProducts />
 
         </Container>
       </section>
-
-    </div>
+    </main>
   )
 }
