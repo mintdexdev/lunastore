@@ -4,8 +4,7 @@ export default function Help() {
   return (
     <div className='flex flex-col gap-20'>
       <Banner
-        heading='help and support'
-        title='from start to finish'
+        title='Help and support'
         tagline='Everything you need, Everything you want' />
 
       <section>

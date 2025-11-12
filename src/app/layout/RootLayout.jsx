@@ -3,7 +3,7 @@ import { Outlet } from 'react-router';
 
 export default function RootLayout() {
   return (
-    <div>
+    <>
       <header>
         <Navbar />
       </header>
@@ -11,6 +11,6 @@ export default function RootLayout() {
       <Outlet />
 
       <Footer />
-    </div>
+    </>
   )
 }

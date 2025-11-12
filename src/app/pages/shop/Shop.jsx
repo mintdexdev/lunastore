@@ -2,7 +2,7 @@ import { Banner, CategoryGroup, Container, ProductGroup } from '@/components';
 
 export default function Shop() {
   return (
-    <div className='flex flex-col gap-40'>
+    <main className='flex flex-col gap-40'>
       <section>
         <div className="grid gap-6">
           <Banner
@@ -72,6 +72,6 @@ export default function Shop() {
         </Container>
       </section>
 
-    </div>
+    </main>
   )
 }

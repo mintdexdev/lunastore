@@ -3,7 +3,7 @@ import { Link } from 'react-router';
 
 export default function Summary() {
   return (
-    <div>
+    <main>
       <Banner
         varient='noImage'
         heading='summary'
@@ -66,6 +66,6 @@ export default function Summary() {
         </Container>
       </section>
       
-    </div>
+    </main>
   )
 }

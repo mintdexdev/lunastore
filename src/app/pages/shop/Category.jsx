@@ -24,7 +24,7 @@ export default function Category() {
   if (!category) return <Navigate to='/shop' replace />;
 
   return (
-    <main className='flex flex-col gap-20'>
+    <main className='flex flex-col gap-40'>
       <section>
         <div className='grid gap-6'>
           <Banner

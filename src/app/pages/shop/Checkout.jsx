@@ -2,7 +2,7 @@ import { Banner, Container, Divider, ProductCard, TextField, TotalPriceCard } fr
 
 export default function Checkout() {
   return (
-    <div className=''>
+    <main>
       <Banner
         varient='noImage'
         heading='checkout'
@@ -74,6 +74,6 @@ export default function Checkout() {
 
         </Container>
       </section>
-    </div>
+    </main>
   )
 }

@@ -1,5 +1,7 @@
 export default function NavCategory() {
   return (
-    <div>NavCategory</div>
+    <main>
+      NavCategory
+    </main>
   )
 }

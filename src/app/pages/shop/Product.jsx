@@ -45,7 +45,7 @@ const product = {
 
 export default function Product() {
   return (
-    <>
+    <main className='flex flex-col gap-40'>
       <Banner
         heading={product.category}
         title={product.name}
@@ -184,6 +184,6 @@ export default function Product() {
           <AllProducts />
         </Container>
       </section>
-    </>
+    </main>
   );
 }

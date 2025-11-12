@@ -9,8 +9,9 @@ import {
 
 export default function Cart() {
   return (
-    <div className='flex flex-col gap-20'>
+    <main>
       <Banner
+        varient='noImage'
         heading='your cart'
         title='Got the best deals'
         tagline='ready to purchase' />
@@ -34,6 +35,6 @@ export default function Cart() {
 
         </Container>
       </section>
-    </div>
+    </main>
   )
 }

@@ -2,8 +2,8 @@ import { AllProducts, Banner, Container } from '@/components';
 
 export default function SearchResult() {
   return (
-    <div>
-      
+    <main>
+
       <Banner varient='noImage'
         heading='search result for'
         title='neon green tshirt'
@@ -17,6 +17,6 @@ export default function SearchResult() {
         </Container>
       </section>
 
-    </div>
+    </main>
   )
 }

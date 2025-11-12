@@ -2,7 +2,7 @@ import { Banner, Container } from '@/components';
 
 export default function Privacy() {
   return (
-    <div className='flex flex-col gap-20'>
+    <main className='flex flex-col gap-40'>
       <Banner
         heading='Privacy policy'
         title='from start to finish'
@@ -16,6 +16,6 @@ export default function Privacy() {
 
       </section>
 
-    </div>
+    </main>
   )
 }

@@ -2,13 +2,11 @@ import { Banner, Container } from '@/components';
 
 export default function About() {
   return (
-    <div className='flex flex-col gap-20'>
+    <main className='flex flex-col gap-40'>
       <Banner
         heading='About Us'
         title='Get to know us better'
         tagline='How we started and how its going' />
-
-
 
       <section>
         <Container>
@@ -18,6 +16,6 @@ export default function About() {
 
       </section>
 
-    </div>
+    </main>
   )
 }
