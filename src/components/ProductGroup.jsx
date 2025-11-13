@@ -5,10 +5,10 @@ export default function ProductGroup(
   {
     varient = 'default',
     cardVarient = 'default',
-    exploreBtn = false,
+    TrailingLink = false,
 
     title = 'enter title here',
-    exploreText = '',
+    TrailingLinkText = 'Explore all',
   }
 ) {
 
@@ -18,7 +18,7 @@ export default function ProductGroup(
       <div>
         <div className='flex justify-between items-center'>
           <h2 className='text-l4'>{title}</h2>
-          {exploreBtn && <p className='whitespace-nowrap'> Explore all {exploreText} -</p>}
+          {TrailingLink && <p className='whitespace-nowrap'>{TrailingLinkText} -</p>}
         </div>
 
         <div className='mt-8 grid grid-cols-3 gap-6'>
@@ -37,7 +37,7 @@ export default function ProductGroup(
     <div>
       <div className='flex justify-between items-center'>
         <h2 className='text-l4'>{title}</h2>
-        {exploreBtn && <p className='whitespace-nowrap'> Explore all {exploreText} -</p>}
+        {TrailingLink && <p className='whitespace-nowrap'>{TrailingLinkText} -</p>}
       </div>
 
       <div className='mt-8 grid grid-cols-4 gap-6'>

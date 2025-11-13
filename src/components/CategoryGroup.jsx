@@ -2,10 +2,10 @@ export default function CategoryGroup(
   {
     title = 'All Categories',
     items = [
-      { name: "category", imgLink: '/.temp/images/category.jpg' },
-      { name: "category", imgLink: '/.temp/images/category.jpg' },
-      { name: "category", imgLink: '/.temp/images/category.jpg' },
-      { name: "category", imgLink: '/.temp/images/category.jpg' },
+      { name: "category1", imgLink: '/.temp/images/category.jpg' },
+      { name: "category2", imgLink: '/.temp/images/category.jpg' },
+      { name: "category3", imgLink: '/.temp/images/category.jpg' },
+      { name: "category4", imgLink: '/.temp/images/category.jpg' },
     ]
   }
 ) {

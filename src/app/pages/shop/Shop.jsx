@@ -4,11 +4,13 @@ export default function Shop() {
   return (
     <main className='flex flex-col gap-40'>
       <section>
-        <div className="grid gap-6">
+        <div className="grid gap-16-24">
+
           <Banner
             heading='Store'
             title={`Luna's Store`}
             tagline='Everything you need, Everything you want' />
+
           <Banner
             varient='sub'
             title='featured or new release carosal here'
@@ -16,12 +18,12 @@ export default function Shop() {
           />
           <Banner
             varient='sub'
-            title='featured Collection banner 2s'
+            title='featured Collection banner 1'
             tagline='tagline-here'
           />
           <Banner
             varient='sub'
-            title='featured Collection banner 2s'
+            title='featured Collection banner 2'
             tagline='tagline-here'
           />
         </div>
@@ -42,14 +44,12 @@ export default function Shop() {
             title='New Releases. take a look'
           />
           <ProductGroup
-            type='full'
-            exploreBtn
-            title='Deals of the month. special discounted products.'
-            exploreText='deals'
+            title='Special deals on Products.'
+            TrailingLink
+            TrailingLinkText='Explore all deals'
           />
           <ProductGroup
-            type='full'
-            title='Trending this month. see what people love.'
+            title='Trending Products. See what others love.'
           />
 
         </Container>
