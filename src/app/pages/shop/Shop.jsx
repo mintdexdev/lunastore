@@ -30,8 +30,17 @@ export default function Shop() {
       </section>
 
       <section >
-        <Container className='grid gap-20' >
-          <CategoryGroup title='Nav Category - test' />
+        <Container>
+          <CategoryGroup
+            varient={'main'}
+            title='Nav Category - test'
+            categories={[
+              { name: "category1", imgLink: '/.temp/images/category.jpg' },
+              { name: "category2", imgLink: '/.temp/images/category.jpg' },
+              { name: "category3", imgLink: '/.temp/images/category.jpg' },
+              { name: "category4", imgLink: '/.temp/images/category.jpg' },
+            ]}
+          />
         </Container>
       </section>
 
