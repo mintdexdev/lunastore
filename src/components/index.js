@@ -6,6 +6,7 @@ import Button from './Button.jsx';
 import TextField from './TextField.jsx';
 import Navbar from './Navbar.jsx';
 import Footer from './Footer.jsx';
+import Icon from './Icon.jsx';
 
 import Container from './Container.jsx';
 
@@ -28,6 +29,7 @@ export {
   TextField,
   Navbar,
   Footer,
+  Icon,
   Container,
   ProductCard,
   TotalPriceCard,

@@ -145,7 +145,11 @@
    --color-secondary-a: #111111;
 
    --color-tertiary: #0071e3;
-   --color-tertiary-a: #012061;
+   --color-tertiary-a: #2686E7;
+   --color-tertiary-b: #61A7EE;
+   --color-tertiary-c: #80B8F1;
+   --color-tertiary-d: #9EC9F4;
+   --color-tertiary-e: #D9EAFB;
 
    --color-error: #b3261e;
 
@@ -170,7 +174,11 @@
    --color-secondary-a: #111111;
 
    --color-tertiary: #0071e3;
-   --color-tertiary-a: #012061;
+   --color-tertiary-a: #2686E7;
+   --color-tertiary-b: #61A7EE;
+   --color-tertiary-c: #80B8F1;
+   --color-tertiary-d: #9EC9F4;
+   --color-tertiary-e: #D9EAFB;
 
    --color-c-error: #b3261e;
 
@@ -277,7 +285,7 @@
    color: var(--color-secondary);
  }
 
- button,
+ button:not([disabled]),
  a {
    @apply cursor-pointer
  }
