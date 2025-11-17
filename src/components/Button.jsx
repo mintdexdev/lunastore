@@ -8,6 +8,18 @@ export default function Button({
   ...props
 }) {
 
+  if (varient === 'noCover') {
+    return (
+      <button
+        className={twMerge('block h-10 px-4 w-full', className)}
+        type={type}
+        {...props}
+      >
+        {children}
+      </button>
+    )
+  }
+
   if (varient === 'outline') {
     return (
       <button
