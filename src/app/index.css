@@ -190,8 +190,9 @@
    --color-neutral-d: #939393;
    --color-neutral-e: #d9d9d9;
 
-   --spacing-16-80: clamp(1rem, 0.0769rem + 4.1026vw, 5rem);
+   --spacing-8-16: clamp(0.5rem, 0.3846rem + 0.5128vw, 1rem);
    --spacing-16-24: clamp(1rem, 0.8846rem + 0.5128vw, 1.5rem);
+   --spacing-16-80: clamp(1rem, 0.0769rem + 4.1026vw, 5rem);
 
    --breakpoint-sm: 40rem;
    --breakpoint-md: 48rem;

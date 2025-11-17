@@ -2,31 +2,27 @@
 import { AllProducts, Banner, Container, ProductGroup } from '@/components';
 import { Navigate, useParams } from 'react-router';
 
-const categories = [
-  { 'id': '1', 'name': 'T-Shirt', 'slug': 't-shirt' },
-]
-
-const CategoryData = {
+const categoryData = [{
   id: '1',
   name: 'T-Shirt',
-  slug: 't-shirt',
+  slug: 'category-name',
   allProduct: ['p1', 'p2', 'p3'],
   latestProduct: ['p1', 'p2', 'p3'],
   trendingProduct: ['p1', 'p2', 'p3'],
-}
+}]
 
 export default function Category() {
   const { categorySlug } = useParams();
 
   // Find category by slug
-  const category = categories.find(c => c.slug === categorySlug);
+  const category = categoryData.find(c => c.slug === categorySlug);
 
   if (!category) return <Navigate to='/shop' replace />;
 
   return (
     <main className='flex flex-col gap-40'>
       <section>
-        <div className='grid gap-6'>
+        <div className='grid gap-8-16'>
           <Banner
             heading='Category'
             title='T-shirts'
@@ -64,6 +60,23 @@ export default function Category() {
 
           <AllProducts />
 
+        </Container>
+      </section>
+
+      <section>
+        <Container variant='noPadding' >
+          <div className='grid gap-8-16'>
+            <Banner
+              varient='sub'
+              title='old Collection banner '
+              tagline='tagline-here'
+            />
+            <Banner
+              varient='sub'
+              title='old Collection banner 2s'
+              tagline='tagline-here'
+            />
+          </div>
         </Container>
       </section>
     </main>

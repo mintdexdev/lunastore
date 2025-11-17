@@ -3,7 +3,7 @@ import { Link } from 'react-router';
 
 const navlist = [
   { name: 'Shop', link: '/shop' },
-  { name: 'Category', link: '/shop/t-shirt' },
+  { name: 'Category', link: '/shop/category-name' },
   { name: 'Search', link: '/shop/search-result' },
   { name: 'Product', link: 'shop/product/t-shirt' },
   { name: 'Wishlist', link: '/shop/wishlist' },
@@ -21,10 +21,10 @@ const navlist = [
 const linkList = [
   { name: 'Shop', link: '/shop' },
   { name: 'Offers', link: '/shop/offers' },
-  { name: 'Men', link: '/shop/men' },
-  { name: 'Women', link: '/shop/women' },
-  { name: 'Accessories', link: '/shop/accessories' },
-  { name: 'Shoes', link: '/shop/shoes' },
+  { name: 'Men', link: '/shop/outlet/men' },
+  { name: 'Women', link: '/shop/outlet/women' },
+  { name: 'Accessories', link: '/shop/outlet/accessories' },
+  { name: 'Shoes', link: '/shop/outlet/shoes' },
 ]
 
 export default function Navbar() {
