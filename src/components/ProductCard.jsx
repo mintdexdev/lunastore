@@ -1,56 +1,48 @@
-import { CARD_CONSTANTS } from '@/app/constants/ui.constants';
-import { Divider } from '.';
+import { Button, Divider } from '.';
+
+const CARD_CONSTANTS = {
+  VARIANT: {
+    DEFAULT: 'default',
+    EMBEDDED: 'embedded',
+    WISHLIST: 'wishlist',
+    CART: 'cart',
+    CHECKOUT: 'checkout',
+    ORDERED: 'ordered'
+  },
+
+  LAYOUT: {
+    GRID: 'grid',
+    LIST: 'list'
+  },
+}
 
 export default function ProductCard(
-  { varient = CARD_CONSTANTS.VARIANT.DEFAULT,
+  {
+    varient = CARD_CONSTANTS.VARIANT.DEFAULT,
 
     imgLink = '/.temp/images/product.jpg',
     category = 'T-shirt',
-    title = 'Title: Batman t-shirt',
-    description = 'Embrace minimalist aesthetics with this half-zip shirt  brace minimalist aestheti brace minimali...',
+    title = 'Title of Product: Example title with a long name title',
+    description = 'Demo Tagline for Product this will not be a short description instead of full description Example ...',
     price = '$199.99',
     originalPrice = '$249.99',
-    discount = '35'
+    discountAmount = '25'
   }
 ) {
+
   if (varient === CARD_CONSTANTS.VARIANT.EMBEDDED) {
     return (
       <div className='relative p-6 aspect-[3/4] text-primary'>
 
-        <div className='absolute inset-0 -z-[1] rounded-3xl overflow-clip'>
+        <div className='absolute inset-0 -z-[1] rounded-4xl overflow-clip'>
           <img className='w-full h-full' src={imgLink} alt={title} />
         </div>
 
 
-        <div className='flex flex-col gap-2'>
-          <h3 className='text-l1'>{title}</h3>
-          <p className='text-helper4'>{description}</p>
+        <div className='flex flex-col gap-2 overflow-clip'>
+          <h3 className='text-l1 whitespace-nowrap'>{title}</h3>
+          <p className='text-neutral-b '>{description}</p>
           <p className='text-l1'>{price}</p>
-        </div>
-      </div>
-    )
-  }
-
-  if (varient === CARD_CONSTANTS.VARIANT.CATEGORY) {
-    return (
-      <div>
-        <div className='relative  text-primary p-6 aspect-[3/4] '>
-          <div className='absolute inset-0 -z-[1] rounded-3xl overflow-clip'>
-            <img className='w-full h-full ' src={imgLink} alt={title} />
-          </div>
-          <div className='ml-auto w-6 h-6 rounded-full overflow-clip'>
-            <div className='w-full h-full bg-c-error' />
-          </div>
-        </div>
-
-        <div className='flex flex-col gap-2 mt-2'>
-          <h3 className='text-l1'>{title}</h3>
-          <p className='text-helper4'>{description}</p>
-          <div className='flex gap-4 items-center'>
-            <p className='text-l1'>{price}</p>
-            <p className='text-helper2 line-through'>{originalPrice}</p>
-            <p className='text-c-4'>{discount}% Off</p>
-          </div>
         </div>
       </div>
     )
@@ -59,12 +51,12 @@ export default function ProductCard(
   if (varient === CARD_CONSTANTS.VARIANT.WISHLIST) {
     return (
       <div>
-        <div className='relative  text-primary p-6 aspect-[3/4] '>
-          <div className='absolute inset-0 -z-[1] rounded-3xl overflow-clip'>
+        <div className='relative p-2 aspect-[3/4] '>
+          <div className='absolute inset-0 -z-[1] rounded-4xl overflow-clip'>
             <img className='w-full h-full ' src={imgLink} alt={title} />
           </div>
-          <div className='ml-auto w-6 h-6 rounded-full overflow-clip'>
-            <div className='w-full h-full bg-c-error' />
+          <div className='ml-auto w-12 h-12 rounded-full overflow-clip'>
+            <div className='w-full h-full bg-primary grid place-items-center'>*-*</div>
           </div>
         </div>
 
@@ -74,11 +66,11 @@ export default function ProductCard(
             <div className='h-[1px] bg-neutral-c' />
           </div>
           <h3 className='text-l1'>{title}</h3>
-          <p className='text-helper4'>{description}</p>
+          <p className='text-neutral-b '>{description}</p>
           <div className='flex gap-4 items-center'>
             <p className='text-l1'>{price}</p>
-            <p className='text-helper2 line-through'>{originalPrice}</p>
-            <p className='text-c-4'>{discount}% Off</p>
+            <p className='text-neutral-b line-through'>{originalPrice}</p>
+            <p className='text-c-error'>{discountAmount}% Off</p>
           </div>
         </div>
       </div>
@@ -88,39 +80,53 @@ export default function ProductCard(
   if (varient === CARD_CONSTANTS.VARIANT.CART) {
     return (
       <div className='flex gap-4'>
-        <div className='w-1/4 aspect-[3/4] rounded-[20px] overflow-clip'>
+        <div className='w-1/4 aspect-[3/4] rounded-4xl overflow-clip'>
           <img className='w-full h-full object-cover' src={imgLink} alt={title} />
         </div>
 
-        <div className='w-full'>
-          <h3 className='text-l2 w-full'>{title}</h3>
+        <div>
 
-          <div className='text-sm mt-1 w-full'>
-            <p>{category}</p>
-            <div className='text-helper2'>
-              <p>Size: UK 9</p>
-              <p>Color: Blue</p>
-              <p>Exttra: something</p>
+          <div className='flex'>
+            <h3 className='text-l2 w-full'>{title}</h3>
+
+            {discountAmount == '0' ?
+              <p className='text-l2'>{price}</p> :
+              <div className='w-fit text-right'>
+                <p className='text-l2'>{price}</p>
+                <p className='text-neutral-b line-through'>{originalPrice}</p>
+                <p className='text-c-error'>{discountAmount}% Off</p>
+              </div>
+            }
+          </div>
+
+          <div className='mt-3 flex'>
+
+            <div className='mt-1 w-full'>
+              <p className='text-sm'>{category}</p>
+              <div className='text-neutral-b'>
+                <p>Size: UK 9</p>
+                <p>Color: Blue</p>
+                <p>Exttra: something</p>
+              </div>
+            </div>
+
+            <div className='flex flex-col whitespace-nowrap'>
+              <Button
+                icon={"favorite"}
+                varient='outline'
+              >
+                Move to Wishlist
+              </Button>
+              <Button
+                icon={"delete"}
+                varient='noCover'
+              >
+                Remove from cart
+              </Button>
             </div>
           </div>
+
         </div>
-
-        <div className='w-1/3 '>
-          <div className=' text-right'>
-            <p className='text-l2'>{price}</p>
-            <p className='text-helper2 line-through'>{originalPrice}</p>
-            <p className='text-c-4'>{discount}% Off</p>
-          </div>
-
-          <div className='flex flex-col whitespace-nowrap'>
-            <button className='h-[40px] border px-4 rounded-full w-fit'
-              type='button'>
-              Move to wishlist
-            </button>
-            <button className='text-helper2 underline' type='button'>remove from cart</button>
-          </div>
-        </div>
-
       </div>
     )
   }
@@ -131,7 +137,7 @@ export default function ProductCard(
 
 
         <div className='w-1/4'>
-          <div className='aspect-[3/4] rounded-lg overflow-clip'>
+          <div className='aspect-[3/4] rounded-xl overflow-clip'>
             <img className='w-full h-full object-cover' src={imgLink} alt={title} />
           </div>
         </div>
@@ -140,52 +146,58 @@ export default function ProductCard(
 
           <div className='w-full'>
             <h3 className='text-lg w-full'>{title} when long</h3>
-            <div className='text-sm w-full'>
-              <p>{category}</p>
-              <div className='flex gap-1 flex-wrap text-helper2'>
-                <p>Size: UK 9</p>
-                <Divider horizontal />
-                <p>Color: Blue</p>
-                <Divider horizontal />
-                <p>Exttra: something</p>
-              </div>
+            <p className='text-sm'>{category}</p>
+            <div className='flex gap-0.5 flex-wrap  text-neutral-b'>
+              <p>Quantity: 1</p>,
+              <p>Size: UK 9</p>,
+              <p>Color: Blue</p>,
+              <p>Extra: something</p>
             </div>
           </div>
 
-          <div className='text-right w-fit'>
-            <p className='text-lg'>{price}</p>
-            <p className='text-helper2 line-through'>{originalPrice}</p>
-            <p className='text-c-4'>{discount}% Off</p>
-          </div>
+          {discountAmount == '0' ?
+            <p className='text-lg'>{price}</p> :
+            <div className='text-right w-fit'>
+              <p className='text-lg'>{price}</p>
+              <p className='text-neutral-b line-through'>{originalPrice}</p>
+              <p className='text-c-error'>{discountAmount}% Off</p>
+            </div>
+          }
         </div>
       </div>
     )
   }
 
-  if (varient === CARD_CONSTANTS.VARIANT.ORDER_HISTORY) {
+  if (varient === CARD_CONSTANTS.VARIANT.ORDERED) {
     return (
       <div className='flex gap-4'>
 
-        <div className='w-1/4'>
-          <div className='aspect-[3/4] rounded-lg overflow-clip'>
+        <div className='w-1/6'>
+          <div className='aspect-[3/4]  rounded-xl overflow-clip'>
             <img className='w-full h-full object-cover' src={imgLink} alt={title} />
           </div>
         </div>
 
-        <div className='w-full'>
-          <h3 className='text-lg w-full'>{title} when long</h3>
-          <div className='text-sm w-full'>
-            <p>{category}</p>
-            <div className='flex gap-1 flex-wrap text-helper2'>
-              <p>Quantity: 1</p>
-              <Divider horizontal />
-              <p>Size: UK 9</p>
-              <Divider horizontal />
-              <p>Color: Blue</p>
-              <Divider horizontal />
-              <p>Exttra: something</p>
-            </div>
+        <div className='w-full flex flex-col gap-1'>
+
+          <h3 className='w-full'>{title}</h3>
+          <p className='text-sm'>{category}</p>
+
+          <div className='flex gap-0.5 flex-wrap text-sm text-neutral-b'>
+            <p>Quantity: 1</p>,
+            <p>Size: UK 9</p>,
+            <p>Color: Blue</p>,
+            <p>Extra: something</p>
           </div>
+
+          {discountAmount == '0' ?
+            <p className='text-sm'>{price}</p> :
+            <div className='text-sm flex gap-4 items-center'>
+              <p className='text-neutral-b'>{price}</p>
+              <p className='line-through text-neutral-d'>{originalPrice}</p>
+              <p className='text-neutral-d'>{discountAmount}% Off</p>
+            </div>
+          }
         </div>
 
       </div>
@@ -194,26 +206,33 @@ export default function ProductCard(
 
   return (
     <div>
-      <div className='relative  text-primary p-6 aspect-[3/4] '>
-        <div className='absolute inset-0 -z-[1] rounded-3xl overflow-clip'>
+      <div className='relative p-2 aspect-[3/4] '>
+        <div className='absolute inset-0 -z-1 rounded-4xl overflow-clip'>
           <img className='w-full h-full' src={imgLink} alt={title} />
         </div>
-        <div className='ml-auto w-6 h-6 rounded-full overflow-clip'>
-          <div className='w-full h-full bg-tertiary' />
+        <div className='ml-auto w-12 h-12 rounded-full overflow-clip'>
+          <div className='w-full h-full bg-primary grid place-items-center'>*-*</div>
         </div>
       </div>
 
-      <div className='flex flex-col gap-2 mt-2'>
+      <div className='mt-2'>
         <div>
           <p>{category}</p>
-          <div className='h-[1px] bg-neutral-c' />
+          <Divider className='my-1' />
         </div>
-        <h3 className='text-l1'>{title}</h3>
-        <p className='text-helper4'>{description}</p>
-        <div className='flex gap-4 items-center'>
-          <p className='text-l1'>{price}</p>
-          <p className='text-helper2 line-through'>{originalPrice}</p>
-          <p className='text-c-4'>{discount}% Off</p>
+        <div className='grid gap-2'>
+          <h3 className='text-l1'>{title}</h3>
+          <p className='text-neutral-b'>{description}</p>
+
+          {discountAmount == '0' ?
+            <p className='text-l1'>{price}</p> :
+            <div className='flex gap-4 items-center'>
+              <p className='text-l1'>{price}</p>
+              <p className='text-neutral-b line-through'>{originalPrice}</p>
+              <p className='text-c-error'>{discountAmount}% Off</p>
+            </div>
+          }
+
         </div>
       </div>
     </div>

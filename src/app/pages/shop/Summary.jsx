@@ -57,9 +57,9 @@ export default function Summary() {
             <h2 className='text-l3'>Ordered Product</h2>
 
             <div className='grid gap-4 my-8'>
-              <ProductCard varient='checkout' />
-              <ProductCard varient='checkout' />
-              <ProductCard varient='checkout' />
+              <ProductCard varient='ordered' />
+              <ProductCard varient='ordered' />
+              <ProductCard varient='ordered' />
             </div>
 
           </div>

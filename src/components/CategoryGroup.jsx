@@ -8,7 +8,7 @@ export default function CategoryGroup(
   if (varient === "main") {
     return (
       <div>
-        <h2 className='text-l4 text-center'>{title}</h2>
+        <h2 className='text-l5 text-center'>{title}</h2>
         <div className='mt-10 grid grid-cols-4 gap-6'>
           {categories.map((category) => (
             <div className='aspect-[3/4] bg-neutral-600 rounded-3xl overflow-clip'

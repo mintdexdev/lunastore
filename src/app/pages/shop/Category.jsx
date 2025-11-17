@@ -45,17 +45,15 @@ export default function Category() {
           <ProductGroup
             varient='latest'
             cardVarient='embedded'
-            title='Latest Release. Take a look at whats new right now.'
+            title='New Releases. take a look'
           />
           <ProductGroup
-            type='full'
-            exploreBtn
-            title='Deals of the month. special discounted products.'
-            exploreText='deals'
+            title='Special deals on Products.'
+            TrailingLink
+            TrailingLinkText='Explore all deals'
           />
           <ProductGroup
-            type='full'
-            title='Trending this month. see what people love.'
+            title='Trending Products. See what others love.'
           />
 
         </Container>
