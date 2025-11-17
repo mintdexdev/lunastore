@@ -15,10 +15,14 @@ import {
   Privacy,
   Terms,
   Shop, Category, Product, Cart, Wishlist, Summary, Help, SearchResult, Checkout,
-  NavCategory
+  OutletCategory,  Offers
 } from './pages';
 
+import Test from '@/components/Test';
+
 const router = createBrowserRouter([
+  { path: 'test', Component: Test },
+  
   {
     path: '/',
     Component: RootLayout,
@@ -31,12 +35,9 @@ const router = createBrowserRouter([
       {
         path: 'shop',
         children: [
-          { index: true, Component: Shop },
-          { path: 'offers', Component: NavCategory },
-          { path: 'men', Component: NavCategory },
-          { path: 'women', Component: NavCategory },
-          { path: 'accessories', Component: NavCategory },
-          { path: 'shoes', Component: NavCategory },
+          { index: true, Component: Shop },                            
+          { path: 'offers', Component: Offers },
+          { path: 'outlet/:navCategory', Component: OutletCategory },
           { path: ':categorySlug', Component: Category },
           { path: 'search-result', Component: SearchResult },
           { path: 'cart', Component: Cart },
@@ -53,7 +54,6 @@ const router = createBrowserRouter([
     path: 'auth',
     Component: Auth,
   },
-
 ]);
 
 createRoot(document.getElementById('root')).render(
